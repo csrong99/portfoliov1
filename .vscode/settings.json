@@ -1,0 +1,26 @@
+{
+	"emmet.includeLanguages": {
+		"postcss": "css"
+	},
+	"emmet.syntaxProfiles": {
+		"postcss": "css"
+	},
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+	"editor.quickSuggestions": {
+		"strings": true
+	},
+	"tailwindCSS.includeLanguages": {
+		"plaintext": "html"
+	},
+	"stylelint.snippet": [],
+    "files.associations": {
+        "*.css": "css"
+    },
+	"cssPeek.peekToExclude": [
+		"**/node_modules/**",
+		"**/bower_components/**",
+		"/public/css/styles.css"
+	]
+}

@@ -43,5 +43,8 @@ themeButton.addEventListener('click',()=>{
     //save theme and current icon user chose
     localStorage.setItem('selected-theme',getCurrentTheme())
     localStorage.setItem('selected-icon',getCurrentIcon())
-})
+});
+
+//scrolling number 
+
 

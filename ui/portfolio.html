@@ -11,7 +11,7 @@
 </head>
 
 <body
-    class="mb-12 text-gray-700 scrollbar-thin dark:scrollbar-thumb-gray-600 dark:scrollbar-track-gray-800 scrollbar-thumb-gray-300 scrollbar-track-gray-100 bg-gray-50 dark:bg-gray-800 dark:text-gray-100">
+    class="text-gray-700 bg-gray-100 scrollbar-thin dark:scrollbar-thumb-gray-600 dark:scrollbar-track-gray-800 scrollbar-thumb-gray-300 scrollbar-track-gray-100 dark:bg-blue-500 dark:text-gray-100">
     <!-- NAVBAR-->
     <header
         class="fixed bottom-0 left-0 z-40 w-full text-gray-700 opacity-100 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 md:top-0 md:bottom-auto"
@@ -64,18 +64,19 @@
             </div>
         </nav>
     </header>
-    <main class="max-w-5xl px-8 m-auto ">
-        <!-- LANDING -->
-        <section id="landing" class="min-h-screen md:p-16">
-            <div class="flex flex-col py-32">
-                <div class="flex flex-col">
-                    <p class="py-3 text-base">Hey, My name is </p>
-                    <p class="py-3 font-semibold text-8xl">Seong Rong</p>
-                    <p class="py-3 text-2xl">I'm a software engineer, passionate in building web application,
-                        creating Artificial Intelligent, and building automation software.</p>
+    <div class="pb-20 dark:bg-gray-800">
+        <main class="max-w-5xl px-6 m-auto ">
+            <!-- LANDING -->
+            <section id="landing" class="min-h-screen md:p-16">
+                <div class="flex flex-col py-32">
+                    <div class="flex flex-col">
+                        <p class="py-3 text-base">Hey, My name is </p>
+                        <p class="py-3 font-semibold text-8xl">Seong Rong</p>
+                        <p class="py-3 text-2xl">I'm a software engineer, passionate in building web application,
+                            creating Artificial Intelligent, and building automation software.</p>
+                    </div>
                 </div>
-            </div>
-            <!-- <div class="relative z-10 flex items-center justify-center h-auto min-h-screen">
+                <!-- <div class="relative z-10 flex items-center justify-center h-auto min-h-screen">
                     <div class="relative max-w-4xl">
                         <div
                             class="absolute inset-0 z-10 transform -skew-y-6 shadow-lg bg-gradient-to-r from-blue-400 to-red-400 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg">
@@ -110,182 +111,184 @@
                         </div>
                     </div>
                 </div> -->
-        </section>
-        <!-- ABOUT ME -->
-        <section id="about-me" class="mb-24">
-            <div class="my-7">
-                <h2 class="text-3xl font-semibold text-center">About Me</h2>
-                <p class="text-center text-gray-400">A little bit introduction</p>
-            </div>
-            <div class="grid gap-5 md:grid-cols-2">
-                <!-- about image-->
-                <div class="w-full m-auto">
-                    <img class="w-3/5 max-w-xs m-auto sm:w-64 md:w-full rounded-3xl"
-                        src="/assets/images/profile_pic.jpg">
+            </section>
+            <!-- ABOUT ME -->
+            <section id="about-me" class="mt-32 mb-24">
+                <div class="my-7">
+                    <h2 class="text-3xl font-semibold text-center">About Me</h2>
+                    <p class="text-center text-gray-400">A little bit introduction</p>
                 </div>
-                <!-- about data-->
-                <div class="m-auto ">
-                    <div class="text-center">
-                        Duis cupidatat consectetur non eu. Elit do Lorem esse sint veniam elit. Nisi magna pariatur
-                        nisi ipsum excepteur. Ipsum minim ipsum labore occaecat excepteur excepteur nostrud proident
-                        ullamco magna pariatur esse incididunt. Irure proident laborum dolor est commodo anim amet
-                        qui cupidatat dolore nulla.
+                <div class="grid gap-5 md:grid-cols-2">
+                    <!-- about image-->
+                    <div class="w-full m-auto">
+                        <img class="w-3/5 max-w-xs m-auto sm:w-64 md:w-full rounded-3xl"
+                            src="/assets/images/profile_pic.jpg">
                     </div>
-                    <div class="flex gap-3 my-6">
-                        <div class="flex-auto w-1/3 text-center justify-evenly">
-                            <span class="block py-2 text-3xl font-semibold md:text-2xl">04+ </span>
-                            <span class="block text-xs font-bold text-gray-400 ">Years Experiences</span>
+                    <!-- about data-->
+                    <div class="m-auto ">
+                        <div class="text-center">
+                            Duis cupidatat consectetur non eu. Elit do Lorem esse sint veniam elit. Nisi magna pariatur
+                            nisi ipsum excepteur. Ipsum minim ipsum labore occaecat excepteur excepteur nostrud proident
+                            ullamco magna pariatur esse incididunt. Irure proident laborum dolor est commodo anim amet
+                            qui cupidatat dolore nulla.
                         </div>
-                        <div class="flex-auto w-1/3 text-center justify-evenly">
-                            <span class="block py-2 text-3xl font-semibold md:text-2xl">04+ </span>
-                            <span class="block text-xs font-bold text-gray-400">Years Experiences</span>
-                        </div>
-                        <div class="flex-auto w-1/3 text-center justify-evenly">
-                            <span class="block py-2 text-3xl font-semibold md:text-2xl">04+ </span>
-                            <span class="block text-xs font-bold text-gray-400">Years Experiences</span>
-                        </div>
-                    </div>
-                    <div
-                        class="w-full max-w-xs py-4 m-auto text-center bg-blue-500 border-2 border-opacity-0 rounded-lg">
-                        <span class="text-xl font-bold text-white">Download Me <i
-                                class="ml-2 text-2xl uil uil-import"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- SKILLS -->
-        <section id="skills" class="mb-24">
-            <!-- Title -->
-            <div class="my-7">
-                <h2 class="text-3xl font-semibold text-center">Skills</h2>
-                <p class="text-center text-gray-400">My technical skills</p>
-            </div>
-            <!-- Body -->
-            <div class="grid md:mx-auto md:grid-cols-2 md:gap-y-6">
-                <div class="">
-                    <div class="flex-auto w-full mt-4">
-                        <div class="flex flex-row">
-                            <div class="flex-initial pr-3">
-                                <i class="text-3xl text-blue-500 uil uil-brackets-curly"></i>
+                        <div class="flex gap-3 my-10">
+                            <div class="flex-auto w-1/3 text-center justify-evenly">
+                                <span class="block py-2 text-3xl font-semibold md:text-2xl">
+                                    04+
+                                </span>
+                                <span class="block text-xs font-bold text-gray-400 ">Years Experiences</span>
                             </div>
-                            <div class="flex-auto">
-                                <p class="text-xl font-semibold">Frontend Development</p>
-                                <p class="text-base font-semibold text-gray-400">>3 years</p>
+                            <div class="flex-auto w-1/3 text-center justify-evenly">
+                                <span class="block py-2 text-3xl font-semibold md:text-2xl">04+ </span>
+                                <span class="block text-xs font-bold text-gray-400">Years Experiences</span>
                             </div>
-                            <div class="flex-initial">
-                                <i class="text-3xl uil uil-angle-down skills__arrow"></i>
+                            <div class="flex-auto w-1/3 text-center justify-evenly">
+                                <span class="block py-2 text-3xl font-semibold md:text-2xl">04+ </span>
+                                <span class="block text-xs font-bold text-gray-400">Years Experiences</span>
                             </div>
                         </div>
-                        <div class="flex flex-col w-4/5 max-w-lg mt-4 ml-10 gap-y-6">
-                            <div class="">
-                                <h1 class="text-sm font-extrabold">
-                                    <span>HTML</span>
-                                    <span class="float-right font-bold text-yellow-400">80%</span>
-                                </h1>
-                                <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full">
-                                    <div class="absolute w-full h-full bg-gray-200 "></div>
-                                    <div class="absolute h-full bg-green-500 skill-bar" style="width:80%">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="">
-                                <h1 class="text-sm font-extrabold">
-                                    <span>HTML</span>
-                                    <span class="float-right font-semibold text-yellow-400">80%</span>
-                                </h1>
-                                <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full">
-                                    <div class="absolute w-full h-full bg-gray-200 "></div>
-                                    <div class="absolute h-full bg-yellow-400 skill-bar" style="width:80%">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="">
-                                <h1 class="text-sm font-extrabold">
-                                    <span>HTML</span>
-                                    <span class="float-right font-semibold text-yellow-400">80%</span>
-                                </h1>
-                                <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full">
-                                    <div class="absolute w-full h-full bg-gray-200 "></div>
-                                    <div class="absolute h-full bg-blue-500 skill-bar" style="width:80%">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="">
-                                <h1 class="text-sm font-extrabold">
-                                    <span>HTML</span>
-                                    <span class="float-right font-semibold text-yellow-400">80%</span>
-                                </h1>
-                                <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full">
-                                    <div class="absolute w-full h-full bg-gray-200 "></div>
-                                    <div class="absolute h-full bg-yellow-400 skill-bar" style="width:80%">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-auto w-full mt-4">
-                        <div class="flex flex-row">
-                            <div class="flex-initial pr-3">
-                                <i class="text-3xl text-blue-500 uil uil-channel"></i>
-                            </div>
-                            <div class="flex-auto">
-                                <p class="text-xl font-semibold">Data Science</p>
-                                <p class="text-base font-semibold text-gray-400">>3 Years</p>
-                            </div>
-                            <div class="flex-initial">
-                                <i class="text-3xl uil uil-angle-down skills__arrow"></i>
-                            </div>
-                        </div>
-                        <div>
-
+                        <div
+                            class="w-full max-w-xs py-4 m-auto text-center bg-blue-500 border-opacity-0 rounded-lg">
+                            <span class="text-xl font-bold text-white">Download Me <i
+                                    class="ml-2 text-2xl uil uil-import"></i>
+                            </span>
                         </div>
                     </div>
                 </div>
-                <div class="">
-                    <div class="flex-auto w-full mt-4">
-                        <div class="flex flex-row">
-                            <div class="flex-initial pr-3">
-                                <i class="text-3xl text-blue-500 uil uil-cloud-database-tree"></i>
+            </section>
+            <!-- SKILLS -->
+            <section id="skills" class="mt-32 mb-24">
+                <!-- Title -->
+                <div class="my-7">
+                    <h2 class="text-3xl font-semibold text-center">Skills</h2>
+                    <p class="text-center text-gray-400">My technical skills</p>
+                </div>
+                <!-- Body -->
+                <div class="grid md:mx-auto md:grid-cols-2 md:gap-y-6">
+                    <div class="">
+                        <div class="flex-auto w-full mt-4">
+                            <div class="flex flex-row">
+                                <div class="flex-initial pr-3">
+                                    <i class="text-3xl text-blue-500 uil uil-brackets-curly"></i>
+                                </div>
+                                <div class="flex-auto">
+                                    <p class="text-xl font-semibold">Frontend Development</p>
+                                    <p class="text-base font-semibold text-gray-400">>3 years</p>
+                                </div>
+                                <div class="flex-initial">
+                                    <i class="text-3xl uil uil-angle-down skills__arrow"></i>
+                                </div>
                             </div>
-                            <div class="flex-auto">
-                                <p class="text-xl font-semibold ">Cloud Computing</p>
-                                <p class="text-base font-semibold text-gray-400">>3 years</p>
+                            <div class="flex flex-col w-4/5 max-w-lg mt-4 ml-10 gap-y-6">
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>HTML</span>
+                                        <span class="float-right font-bold text-yellow-400">80%</span>
+                                    </h1>
+                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-green-500 skill-bar" style="width:80%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>HTML</span>
+                                        <span class="float-right font-semibold text-yellow-400">80%</span>
+                                    </h1>
+                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-yellow-400 skill-bar" style="width:80%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>HTML</span>
+                                        <span class="float-right font-semibold text-yellow-400">80%</span>
+                                    </h1>
+                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-blue-500 skill-bar" style="width:80%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>HTML</span>
+                                        <span class="float-right font-semibold text-yellow-400">80%</span>
+                                    </h1>
+                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-yellow-400 skill-bar" style="width:80%">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex-initial">
-                                <i class="text-3xl uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="flex-auto w-full mt-4">
+                            <div class="flex flex-row">
+                                <div class="flex-initial pr-3">
+                                    <i class="text-3xl text-blue-500 uil uil-channel"></i>
+                                </div>
+                                <div class="flex-auto">
+                                    <p class="text-xl font-semibold">Data Science</p>
+                                    <p class="text-base font-semibold text-gray-400">>3 Years</p>
+                                </div>
+                                <div class="flex-initial">
+                                    <i class="text-3xl uil uil-angle-down skills__arrow"></i>
+                                </div>
+                            </div>
+                            <div>
+
                             </div>
                         </div>
                     </div>
-                    <div class="flex-auto w-full mt-4">
-                        <div class="flex flex-row">
-                            <div class="flex-initial pr-3">
-                                <i class="text-3xl text-blue-500 uil uil-cloud-database-tree"></i>
+                    <div class="">
+                        <div class="flex-auto w-full mt-4">
+                            <div class="flex flex-row">
+                                <div class="flex-initial pr-3">
+                                    <i class="text-3xl text-blue-500 uil uil-cloud-database-tree"></i>
+                                </div>
+                                <div class="flex-auto">
+                                    <p class="text-xl font-semibold ">Cloud Computing</p>
+                                    <p class="text-base font-semibold text-gray-400">>3 years</p>
+                                </div>
+                                <div class="flex-initial">
+                                    <i class="text-3xl uil uil-angle-down skills__arrow"></i>
+                                </div>
                             </div>
-                            <div class="flex-auto">
-                                <p class="text-xl font-semibold ">Cloud Computing</p>
-                                <p class="text-base font-semibold text-gray-400">>3 years</p>
-                            </div>
-                            <div class="flex-initial">
-                                <i class="text-3xl uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="flex-auto w-full mt-4">
+                            <div class="flex flex-row">
+                                <div class="flex-initial pr-3">
+                                    <i class="text-3xl text-blue-500 uil uil-cloud-database-tree"></i>
+                                </div>
+                                <div class="flex-auto">
+                                    <p class="text-xl font-semibold ">Cloud Computing</p>
+                                    <p class="text-base font-semibold text-gray-400">>3 years</p>
+                                </div>
+                                <div class="flex-initial">
+                                    <i class="text-3xl uil uil-angle-down skills__arrow"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- PROJECTS -->
-        <section id="projects" class="mb-24">
-            <div class="my-7">
-                <h2 class="text-3xl font-semibold text-center">Projects</h2>
-                <p class="text-center text-gray-400">Interesting Project that I have built</p>
-            </div>
-            <ul>
-                <!-- PROJECT -->
-                <!-- <li class="relative gap-2">
+            </section>
+            <!-- PROJECTS -->
+            <section id="projects" class="mt-32 mb-24">
+                <div class="my-7">
+                    <h2 class="text-3xl font-semibold text-center">Projects</h2>
+                    <p class="text-center text-gray-400">Interesting Project that I have built</p>
+                </div>
+                <ul>
+                    <!-- PROJECT -->
+                    <!-- <li class="relative gap-2">
                     <div class="relative grid grid-cols-10 rounded-2xl">
                         <div class="z-10 col-span-full row-span-full">
                             <div class="flex flex-col justify-center m-8 text-left">
@@ -310,52 +313,52 @@
                         </div>
                     </div>
                 </li> -->
-                <li class="featured__project">
-                    <div class="project-content">
-                        <p class="project-overline">Featured Project</p>
-                        <h3 class="project-title">Project Title</h3>
-                        <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Tenetur, similique? Amet eos unde ipsum dolore. Ea repudiandae necessitatibus
-                            aliquam optio, repellat, placeat rem suscipit debitis quis blanditiis iste
-                            recusandae consequatur?</div>
-                        <ul class="project-tech-list">
-                            <li>Firebase</li>
-                            <li>Python</li>
-                            <li>Yolov5</li>
-                        </ul>
-                        <div class="project-links">
-                            <i class="text-3xl text-blue-500 uil uil-github-alt"></i>
-                            <i class="text-3xl text-blue-500 uil uil-external-link-alt"></i>
+                    <li class="featured__project">
+                        <div class="project-content">
+                            <p class="project-overline">Featured Project</p>
+                            <h3 class="project-title">Project Title</h3>
+                            <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tenetur, similique? Amet eos unde ipsum dolore. Ea repudiandae necessitatibus
+                                aliquam optio, repellat, placeat rem suscipit debitis quis blanditiis iste
+                                recusandae consequatur?</div>
+                            <ul class="project-tech-list">
+                                <li>Firebase</li>
+                                <li>Python</li>
+                                <li>Yolov5</li>
+                            </ul>
+                            <div class="project-links">
+                                <i class="text-3xl text-blue-500 uil uil-github-alt"></i>
+                                <i class="text-3xl text-blue-500 uil uil-external-link-alt"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-image">
-                        <img class="" src="/assets/images/project-test.png" />
-                    </div>
-                </li>
-                <li class="featured__project">
-                    <div class="project-content">
-                        <p class="project-overline">Featured Project</p>
-                        <h3 class="project-title">Project Title</h3>
-                        <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Tenetur, similique? Amet eos unde ipsum dolore. Ea repudiandae necessitatibus
-                            aliquam optio, repellat, placeat rem suscipit debitis quis blanditiis iste
-                            recusandae consequatur?</div>
-                        <ul class="project-tech-list">
-                            <li>Firebase</li>
-                            <li>Python</li>
-                            <li>Yolov5</li>
-                        </ul>
-                        <div class="project-links">
-                            <i class="text-3xl text-blue-500 uil uil-github-alt"></i>
-                            <i class="text-3xl text-blue-500 uil uil-external-link-alt"></i>
+                        <div class="project-image">
+                            <img class="" src="/assets/images/project-test.png" />
                         </div>
-                    </div>
-                    <div class="project-image">
-                        <img class="" src="/assets/images/project-test.png" />
-                    </div>
-                </li>
-            </ul>
-            <!-- <div class="mx-auto md:max-w-xl">
+                    </li>
+                    <li class="featured__project">
+                        <div class="project-content">
+                            <p class="project-overline">Featured Project</p>
+                            <h3 class="project-title">Project Title</h3>
+                            <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tenetur, similique? Amet eos unde ipsum dolore. Ea repudiandae necessitatibus
+                                aliquam optio, repellat, placeat rem suscipit debitis quis blanditiis iste
+                                recusandae consequatur?</div>
+                            <ul class="project-tech-list">
+                                <li>Firebase</li>
+                                <li>Python</li>
+                                <li>Yolov5</li>
+                            </ul>
+                            <div class="project-links">
+                                <i class="text-3xl text-blue-500 uil uil-github-alt"></i>
+                                <i class="text-3xl text-blue-500 uil uil-external-link-alt"></i>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img class="" src="/assets/images/project-test.png" />
+                        </div>
+                    </li>
+                </ul>
+                <!-- <div class="mx-auto md:max-w-xl">
                 <div class="relative">
                     <div class="swiper">
                         <div class="swiper-wrapper">
@@ -425,156 +428,157 @@
                     </div>
                 </div>
             </div> -->
-        </section>
-        <!-- QUALIFICATIONS -->
-        <section id="qualifications" class="mb-24">
-            <div class="flex mb-12 justify-evenly gap-x-4">
-                <div class="text-xl font-medium text-blue-500">
-                    <i class="text-3xl uil uil-graduation-cap"></i>
-                    Education
-                </div>
-                <div class="text-xl font-medium text-gray-400">
-                    <i class="text-2xl uil uil-trophy"></i>
-                    Achievement
-                </div>
-            </div>
-            <div class="container w-full h-full mx-auto">
-                <div class="relative h-full overflow-hidden wrap">
-                    <div class="absolute h-full border border-gray-700 dark:border-white border-2-2 border-opacity-20"
-                        style="left: 50%">
+            </section>
+            <!-- QUALIFICATIONS -->
+            <section id="qualifications" class="mt-32 mb-24">
+                <div class="flex mb-12 justify-evenly gap-x-4">
+                    <div class="text-xl font-medium text-blue-500">
+                        <i class="text-3xl uil uil-graduation-cap"></i>
+                        Education
                     </div>
-                    <!-- secondary school-->
-                    <div class="flex flex-row-reverse items-center justify-between w-full mb-8 right-timeline">
-                        <div class="order-1 w-5/12"></div>
-                        <div
-                            class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl dark:bg-blue-500">
-                            <h1 class="mx-auto text-lg font-semibold text-white dark:text-white">1</h1>
-                        </div>
-                        <div class="order-1 w-5/12">
-                            <h3 class="mb-3 text-lg font-bold text-gray-800 dark:text-white">Lorem Ipsum</h3>
-                            <p
-                                class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
-                                Lorem Ipsum
-                                is simply dummy
-                                text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy
-                                text ever since the 1500s, when an unknown printer took a galley of type and
-                                scrambled it to make a
-                                type specimen book.</p>
-                        </div>
+                    <div class="text-xl font-medium text-gray-400">
+                        <i class="text-2xl uil uil-trophy"></i>
+                        Achievement
                     </div>
+                </div>
+                <div class="container w-full h-full mx-auto">
+                    <div class="relative h-full overflow-hidden wrap">
+                        <div class="absolute h-full border-l-2 border-gray-700 dark:border-white border-opacity-20"
+                            style="left: 50%">
+                        </div>
+                        <!-- secondary school-->
+                        <div class="flex flex-row-reverse items-center justify-between w-full mb-8 right-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div
+                                class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl dark:bg-blue-500">
+                                <h1 class="mx-auto text-lg font-semibold text-white dark:text-white">1</h1>
+                            </div>
+                            <div class="order-1 w-5/12">
+                                <h3 class="mb-3 text-lg font-bold text-gray-800 dark:text-white">Lorem Ipsum</h3>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    Lorem Ipsum
+                                    is simply dummy
+                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    standard dummy
+                                    text ever since the 1500s, when an unknown printer took a galley of type and
+                                    scrambled it to make a
+                                    type specimen book.</p>
+                            </div>
+                        </div>
 
-                    <div class="flex items-center justify-between w-full mb-8 left-timeline">
-                        <div class="order-1 w-5/12"></div>
-                        <div class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl">
-                            <h1 class="mx-auto text-lg font-semibold text-white">2</h1>
+                        <div class="flex items-center justify-between w-full mb-8 left-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl">
+                                <h1 class="mx-auto text-lg font-semibold text-white">2</h1>
+                            </div>
+                            <div class="order-1 w-5/12">
+                                <h3 class="mb-3 text-lg font-bold text-right text-gray-800 dark:text-white ">Lorem Ipsum
+                                </h3>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-right text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    Lorem Ipsum
+                                    is simply dummy
+                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    standard dummy
+                                    text ever since the 1500s, when an unknown printer took a galley of type and
+                                    scrambled it to make a
+                                    type specimen book.</p>
+                            </div>
                         </div>
-                        <div class="order-1 w-5/12">
-                            <h3 class="mb-3 text-lg font-bold text-gray-800 dark:text-white">Lorem Ipsum</h3>
-                            <p
-                                class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
-                                Lorem Ipsum
-                                is simply dummy
-                                text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy
-                                text ever since the 1500s, when an unknown printer took a galley of type and
-                                scrambled it to make a
-                                type specimen book.</p>
-                        </div>
-                    </div>
 
-                    <div class="flex flex-row-reverse items-center justify-between w-full mb-8 right-timeline">
-                        <div class="order-1 w-5/12"></div>
-                        <div class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl">
-                            <h1 class="mx-auto text-lg font-semibold text-white">3</h1>
+                        <div class="flex flex-row-reverse items-center justify-between w-full mb-8 right-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl">
+                                <h1 class="mx-auto text-lg font-semibold text-white">3</h1>
+                            </div>
+                            <div class="order-1 w-5/12">
+                                <h3 class="mb-3 text-lg font-bold text-gray-800 dark:text-white">Lorem Ipsum</h3>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    Lorem Ipsum
+                                    is simply dummy
+                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    standard dummy
+                                    text ever since the 1500s, when an unknown printer took a galley of type and
+                                    scrambled it to make a
+                                    type specimen book.</p>
+                            </div>
                         </div>
-                        <div class="order-1 w-5/12">
-                            <h3 class="mb-3 text-lg font-bold text-gray-800 dark:text-white">Lorem Ipsum</h3>
-                            <p
-                                class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
-                                Lorem Ipsum
-                                is simply dummy
-                                text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy
-                                text ever since the 1500s, when an unknown printer took a galley of type and
-                                scrambled it to make a
-                                type specimen book.</p>
-                        </div>
-                    </div>
 
-                    <div class="flex items-center justify-between w-full mb-8 left-timeline">
-                        <div class="order-1 w-5/12"></div>
-                        <div class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl">
-                            <h1 class="mx-auto text-lg font-semibold text-white">4</h1>
-                        </div>
-                        <div class="order-1 w-5/12">
-                            <h3 class="mb-3 text-lg font-bold text-gray-800 dark:text-white">Lorem Ipsum</h3>
-                            <p
-                                class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
-                                Lorem Ipsum
-                                is simply dummy
-                                text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy
-                                text ever since the 1500s, when an unknown printer took a galley of type and
-                                scrambled it to make a
-                                type specimen book.</p>
+                        <div class="flex items-center justify-between w-full mb-8 left-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl">
+                                <h1 class="mx-auto text-lg font-semibold text-white">4</h1>
+                            </div>
+                            <div class="order-1 w-5/12">
+                                <h3 class="mb-3 text-lg font-bold text-gray-800 dark:text-white">Lorem Ipsum</h3>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    Lorem Ipsum
+                                    is simply dummy
+                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    standard dummy
+                                    text ever since the 1500s, when an unknown printer took a galley of type and
+                                    scrambled it to make a
+                                    type specimen book.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="achievement"></div>
-        </section>
-        <!-- CONTACT ME -->
-        <section id="contact-me" class="mb-24">
-            <div class="my-7">
-                <h2 class="text-3xl font-semibold text-center">Contacts</h2>
-                <p class="text-center text-gray-400">Hits me up!</p>
-            </div>
-            <div class="grid md:grid-cols-2">
-                <div class="flex flex-col gap-4 mb-4 md:mb-0">
-                    <div class="flex items-center mb-4">
-                        <i class="mr-3 text-4xl text-blue-500 uil uil-phone"></i>
-                        <div>
-                            <p class="mb-1 text-xl font-semibold">Call Me</p>
-                            <p class="text-sm text-gray-400">+60189188618</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center mb-4">
-                        <i class="mr-3 text-4xl text-blue-500 uil uil-envelope"></i>
-                        <div>
-                            <p class="mb-1 text-xl font-semibold">Email</p>
-                            <p class="text-sm text-gray-400">+60189188618</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center mb-4">
-                        <i class="mr-3 text-4xl text-blue-500 uil uil-map-marker"></i>
-                        <div>
-                            <p class="mb-1 text-xl font-semibold">Location</p>
-                            <p class="text-sm text-gray-400">+60189188618</p>
-                        </div>
-                    </div>
+                <div id="achievement"></div>
+            </section>
+            <!-- CONTACT ME -->
+            <section id="contact-me" class="mt-32">
+                <div class="my-7">
+                    <h2 class="text-3xl font-semibold text-center">Contacts</h2>
+                    <p class="text-center text-gray-400">Hits me up!</p>
                 </div>
-                <form action="" class="grid gap-y-8 contact__form">
-                    <div class="rounded-lg contact__content">
-                        <label for="" class="contact__label">Name</label>
-                        <input type="text" class="contact__input">
+                <div class="grid md:grid-cols-2">
+                    <div class="flex flex-col gap-4 mb-4 md:mb-0">
+                        <div class="flex items-center mb-4">
+                            <i class="mr-3 text-4xl text-blue-500 uil uil-phone"></i>
+                            <div>
+                                <p class="mb-1 text-xl font-semibold">Call Me</p>
+                                <p class="text-sm text-gray-400">+60189188618</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="mr-3 text-4xl text-blue-500 uil uil-envelope"></i>
+                            <div>
+                                <p class="mb-1 text-xl font-semibold">Email</p>
+                                <p class="text-sm text-gray-400">+60189188618</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="mr-3 text-4xl text-blue-500 uil uil-map-marker"></i>
+                            <div>
+                                <p class="mb-1 text-xl font-semibold">Location</p>
+                                <p class="text-sm text-gray-400">+60189188618</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Email</label>
-                        <input type="text" class="contact__input">
-                    </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" type="text" class="contact__input"></textarea>
-                    </div>
-                    <div>
-                        <a href="#" class="button">
-                            Send Message
-                            <i class="uil uil-message"></i>
-                        </a>
-                    </div>
-                </form>
-                <!-- <div class="grid place-content-center">
+                    <form action="" class="grid gap-y-8 contact__form">
+                        <div class="rounded-lg contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" type="text" class="contact__input"></textarea>
+                        </div>
+                        <div>
+                            <button href="#" class="border-0 button">
+                                Send Message
+                                <i class="uil uil-message"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- <div class="grid place-content-center">
                 <div
                     class="max-w-sm p-8 mx-auto text-center text-white bg-gradient-to-r from-blue-400 to-indigo-500 rounded-2xl h-72">
                     <h1 class="mb-3 text-3xl">Say hi!</h1>
@@ -598,30 +602,31 @@
                     </button>
                 </div>
             </div> -->
-            </div>
-        </section>
-    </main>
-    <footer class="py-10 text-white bg-blue-500">
-        <div class="mx-4">
-            <div class="container grid gap-6">
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="pt-10 pb-2 text-white bg-blue-500">
+        <div class="max-w-5xl px-6 m-auto">
+            <div class="container grid gap-6 md:grid-cols-3">
                 <div class="">
-                    <p class="mb-1 text-3xl font-semibold">Chuah Seong Rong</p>
-                    <p class="text-sm">Software Engineer</p>
+                    <p class="mb-3 text-3xl font-semibold md:text-2xl lg:text-3xl">Chuah Seong Rong</p>
+                    <p class="text-lg">Software Engineer</p>
                 </div>
 
-                <ul class="flex flex-col text-lg gap-y-4">
-                    <li>Portfolio</li>
-                    <li>Portfolio</li>
-                    <li>Portfolio</li>
+                <ul class="flex flex-col text-lg md:flex-row gap-y-4 ">
+                    <li class="flex-1">Portfolio</li>
+                    <li class="flex-1">Portfolio</li>
+                    <li class="flex-1">Portfolio</li>
                 </ul>
-                <div class="flex flex-row text-2xl gap-x-3">
-                    <a><i class="uil uil-facebook-f"></i></a>
-                    <a><i class="uil uil-instagram"></i></a>
-                    <a><i class="uil uil-linkedin-alt"></i></a>
+                <div class="flex flex-row mr-4 text-3xl gap-x-3">
+                    <a class="pr-4 justify-self-end"><i class="uil uil-facebook-f"></i></a>
+                    <a class="pr-4 justify-self-end"><i class="uil uil-instagram"></i></a>
+                    <a class="pr-4 justify-self-end"><i class="uil uil-linkedin-alt"></i></a>
                 </div>
             </div>
         </div>
-        <p class="mt-8 text-sm text-center text-gray-300">© Chuah Seong Rong. All rights reserved.</p>
+        <p class="mt-20 mb-12 text-sm text-center text-gray-300">© Chuah Seong Rong. All rights reserved.</p>
     </footer>
 
     <!-- JQuery -->

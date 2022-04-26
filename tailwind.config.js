@@ -1,7 +1,9 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  purge: [
+  content: [
+    './ui/*.html',
+    './js/*'
   ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
@@ -9,6 +11,7 @@ module.exports = {
       gridTemplateColumns: {
         'timeline': '1fr max-content 1fr',
       },
+
     },
   },
   variants: {
@@ -21,7 +24,7 @@ module.exports = {
     require('tailwind-scrollbar')
   ],
   colors: {
-    gray: colors.coolGray,
+    gray: colors.gray,
     blue: colors.sky,
     red: colors.rose,
     pink: colors.fuchsia,

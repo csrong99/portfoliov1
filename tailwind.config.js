@@ -11,8 +11,10 @@ module.exports = {
       gridTemplateColumns: {
         'timeline': '1fr max-content 1fr',
       },
-
     },
+    fontFamily: {
+      'sans': ['Poppins', 'sans-serif'],
+    }
   },
   variants: {
     extend: {},

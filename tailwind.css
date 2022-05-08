@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-
+@layer base {
+    html {
+    }
 }
+
 
 @keyframes skillTrans {
     from {
@@ -22,6 +27,7 @@
 }
 
 .button {
+    @apply inline-block;
     @apply bg-blue-500;
     @apply text-white;
     @apply border-0;
@@ -29,7 +35,96 @@
     @apply rounded-lg;
     @apply py-4;
     @apply px-8;
+    @apply font-semibold;
 }
+
+.button--flex {
+    @apply inline-flex;
+    @apply items-center;
+}
+
+/* ================ HOMES ===================== */
+.home__container {
+    @apply gap-4;
+}
+
+.home__content {
+    grid-template-columns: 1fr 3fr;
+    @apply pt-14;
+    @apply items-center;
+    @apply gap-y-4;
+}
+
+.home__social {
+    @apply grid;
+    grid-template-columns: max-content;
+    @apply gap-y-4;
+}
+
+.home__social-icon {
+    @apply text-xl;
+    @apply dark:text-blue-400;
+}
+
+.home__blob {
+    @apply w-60;
+    @apply fill-blue-400;
+}
+
+.home__blob-img {
+    @apply w-44;
+}
+
+.home__data {
+    @apply col-start-1;
+    @apply col-end-3;
+}
+
+.home__title {
+    @apply text-4xl;
+    @apply font-semibold;
+    @apply mb-2;
+}
+
+.home__subtitle {
+    @apply text-xl;
+    @apply text-gray-400;
+    @apply font-semibold;
+    @apply mb-3;
+}
+
+.home__description {
+    @apply mb-8;
+}
+
+.home__scroll {
+    @apply hidden;
+}
+
+.home__scroll-button {
+    @apply text-blue-400;
+    @apply transition;
+}
+
+.home__scroll-button:hover {
+    @apply translate-y-1;
+}
+
+.home__scroll-mouse {
+    @apply text-4xl;
+}
+
+.home__scroll-name {
+    @apply text-base;
+    @apply text-blue-400;
+    @apply font-medium;
+    @apply mr-1;
+}
+
+.home__scroll-arrow {
+    @apply text-2xl;
+}
+
 
 
 
@@ -221,6 +316,44 @@
 .swiper {
     width: 600px;
     height: 300px;
+}
+
+@screen sm {
+    .home__content {
+        grid-template-columns: max-content 1fr 1fr;
+        @apply pt-20;
+        @apply gap-x-8;
+    }
+
+    .home__data {
+        grid-column: initial;
+    }
+
+    .home__img {
+        order: 1;
+        justify-self: center;
+    }
+
+
+
+}
+
+@screen md {
+    .home__blob {
+        @apply w-72;
+    }
+
+    .home__scroll {
+        @apply block;
+    }
+
+    .home__scroll-button {
+        @apply ml-12;
+    }
+
+    .home__container {
+        @apply gap-y-20;
+    }
 }
 
 

@@ -21,33 +21,33 @@
             <div id="nav-menu" class="nav__menu md:ml-auto dark:bg-gray-800">
                 <ul class="grid grid-cols-3 gap-4 list-none md:flex md:gap-x-8">
                     <li class="">
-                        <a class="flex flex-col items-center dark:text-gray-100">
+                        <a href="#landing" class="flex flex-col items-center dark:text-gray-100">
                             <i class="text-2xl uil uil-home md:hidden"></i>Home
                         </a>
                     </li>
                     <li class="">
-                        <a class="flex flex-col items-center dark:text-gray-100">
+                        <a href="#about-me" class="flex flex-col items-center dark:text-gray-100">
                             <i class="text-2xl uil uil-home md:hidden"></i>About
                         </a>
                     </li>
 
                     <li class="">
-                        <a class="flex flex-col items-center dark:text-gray-100">
+                        <a href="#skills" class="flex flex-col items-center dark:text-gray-100">
                             <i class="text-2xl uil uil-home md:hidden"></i>Skill
                         </a>
                     </li>
                     <li class="">
-                        <a class="flex flex-col items-center dark:text-gray-100">
-                            <i class="text-2xl uil uil-home md:hidden"></i>Service
+                        <a href="#projects" class="flex flex-col items-center dark:text-gray-100">
+                            <i class="text-2xl uil uil-home md:hidden"></i>Projects
                         </a>
                     </li>
                     <li class="">
-                        <a class="flex flex-col items-center dark:text-gray-100">
-                            <i class="text-2xl uil uil-home md:hidden"></i>Portfolio
+                        <a href="#qualifications" class="flex flex-col items-center dark:text-gray-100">
+                            <i class="text-2xl uil uil-home md:hidden"></i>Qualifications
                         </a>
                     </li>
                     <li class="">
-                        <a class="flex flex-col items-center dark:text-gray-100">
+                        <a href="#contact-me" class="flex flex-col items-center dark:text-gray-100">
                             <i class="text-2xl uil uil-home md:hidden"></i>Contract
 
                         </a>
@@ -114,7 +114,7 @@
                     </div>
                 </div> -->
                 <!-- Hero section v3.0 -->
-                <section class="home section" id="home">
+                <div class="home section" id="home">
                     <div class="container grid home__container" id="">
                         <div class="grid home__content">
                             <div class="home__social">
@@ -131,7 +131,7 @@
                                         0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"></path>
                                     </mask>
                                     <g mask="url(#mask0)">
-                                        <path fill="#0F62FE" d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                        <path fill="rgb(59 130 246)" d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                                         165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                         129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                         -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"></path>
@@ -156,10 +156,10 @@
                             </a>
                         </div>
                     </div>
-                </section>
+                </div>
             </section>
             <!-- ABOUT ME -->
-            <section id="about-me" class="mt-32 mb-24">
+            <section id="about-me" class="pt-32 pb-24">
                 <div class="my-7">
                     <h2 class="text-3xl font-semibold text-center">About Me</h2>
                     <p class="text-center text-gray-400">A little bit introduction</p>
@@ -204,7 +204,7 @@
                 </div>
             </section>
             <!-- SKILLS -->
-            <section id="skills" class="mt-32 mb-24">
+            <section id="skills" class="pt-32 pb-24">
                 <!-- Title -->
                 <div class="my-7">
                     <h2 class="text-3xl font-semibold text-center">Skills</h2>
@@ -213,7 +213,9 @@
                 <!-- Body -->
                 <div class="grid md:mx-auto md:grid-cols-2 md:gap-y-6">
                     <div class="">
-                        <div class="flex-auto w-full mt-4">
+                        <!-- FRONTEND DEVELOPMENT SKILLS -->
+                        <div class="flex-auto w-full mt-4 skills__close">
+                            <!-- SKILL TITLE -->
                             <div class="flex flex-row">
                                 <div class="flex-initial pr-3">
                                     <i class="text-3xl text-blue-500 uil uil-brackets-curly"></i>
@@ -226,13 +228,14 @@
                                     <i class="text-3xl uil uil-angle-down skills__arrow"></i>
                                 </div>
                             </div>
-                            <div class="flex flex-col w-4/5 max-w-lg mt-4 ml-10 gap-y-6">
+                            <!-- SKILL LIST -->
+                            <div class="flex flex-col w-4/5 max-w-lg mt-4 ml-10 skill__list gap-y-6">
                                 <div class="">
                                     <h1 class="text-sm font-extrabold">
                                         <span>HTML</span>
-                                        <span class="float-right font-bold text-yellow-400">80%</span>
+                                        <span class="float-right font-bold text-blue-400">80%</span>
                                     </h1>
-                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full">
+                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
                                         <div class="absolute w-full h-full bg-gray-200 "></div>
                                         <div class="absolute h-full bg-green-500 skill-bar" style="width:80%">
                                         </div>
@@ -242,9 +245,9 @@
                                 <div class="">
                                     <h1 class="text-sm font-extrabold">
                                         <span>HTML</span>
-                                        <span class="float-right font-semibold text-yellow-400">80%</span>
+                                        <span class="float-right font-semibold text-blue-400">80%</span>
                                     </h1>
-                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full">
+                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
                                         <div class="absolute w-full h-full bg-gray-200 "></div>
                                         <div class="absolute h-full bg-yellow-400 skill-bar" style="width:80%">
                                         </div>
@@ -254,9 +257,9 @@
                                 <div class="">
                                     <h1 class="text-sm font-extrabold">
                                         <span>HTML</span>
-                                        <span class="float-right font-semibold text-yellow-400">80%</span>
+                                        <span class="float-right font-semibold text-blue-400">80%</span>
                                     </h1>
-                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full">
+                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
                                         <div class="absolute w-full h-full bg-gray-200 "></div>
                                         <div class="absolute h-full bg-blue-500 skill-bar" style="width:80%">
                                         </div>
@@ -266,9 +269,9 @@
                                 <div class="">
                                     <h1 class="text-sm font-extrabold">
                                         <span>HTML</span>
-                                        <span class="float-right font-semibold text-yellow-400">80%</span>
+                                        <span class="float-right font-semibold text-blue-400">80%</span>
                                     </h1>
-                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full">
+                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
                                         <div class="absolute w-full h-full bg-gray-200 "></div>
                                         <div class="absolute h-full bg-yellow-400 skill-bar" style="width:80%">
                                         </div>
@@ -276,25 +279,75 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex-auto w-full mt-4">
+                        <!-- DATA SCIENCE SKILLS -->
+                        <div class="flex-auto w-full mt-4 skills__open">
+                            <!-- SKILL TITLE -->
                             <div class="flex flex-row">
                                 <div class="flex-initial pr-3">
-                                    <i class="text-3xl text-blue-500 uil uil-channel"></i>
+                                    <i class="text-3xl text-blue-500 uil uil-brackets-curly"></i>
                                 </div>
                                 <div class="flex-auto">
-                                    <p class="text-xl font-semibold">Data Science</p>
-                                    <p class="text-base font-semibold text-gray-400">>3 Years</p>
+                                    <p class="text-xl font-semibold">Frontend Development</p>
+                                    <p class="text-base font-semibold text-gray-400">>3 years</p>
                                 </div>
                                 <div class="flex-initial">
-                                    <i class="text-3xl uil uil-angle-down skills__arrow"></i>
+                                    <i class="text-3xl uil uil-angle-down skill__arrow"></i>
                                 </div>
                             </div>
-                            <div>
+                            <!-- SKILL LIST -->
+                            <div class="flex flex-col w-4/5 max-w-lg mt-4 ml-10 skill__list gap-y-6">
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>HTML</span>
+                                        <span class="float-right font-bold text-blue-400">80%</span>
+                                    </h1>
+                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-green-500 skill-bar" style="width:80%">
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>HTML</span>
+                                        <span class="float-right font-semibold text-blue-400">80%</span>
+                                    </h1>
+                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-yellow-400 skill-bar" style="width:80%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>HTML</span>
+                                        <span class="float-right font-semibold text-blue-400">80%</span>
+                                    </h1>
+                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-blue-500 skill-bar" style="width:80%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>HTML</span>
+                                        <span class="float-right font-semibold text-blue-400">80%</span>
+                                    </h1>
+                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-yellow-400 skill-bar" style="width:80%">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="">
+                        <!-- CLOUD COMPUTING -->
                         <div class="flex-auto w-full mt-4">
                             <div class="flex flex-row">
                                 <div class="flex-initial pr-3">
@@ -309,6 +362,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- CLOUD COMPUTING -->
                         <div class="flex-auto w-full mt-4">
                             <div class="flex flex-row">
                                 <div class="flex-initial pr-3">
@@ -327,7 +381,7 @@
                 </div>
             </section>
             <!-- PROJECTS -->
-            <section id="projects" class="mt-32 mb-24">
+            <section id="projects" class="pt-32 pb-24">
                 <div class="my-7">
                     <h2 class="text-3xl font-semibold text-center">Projects</h2>
                     <p class="text-center text-gray-400">Interesting Project that I have built</p>
@@ -476,7 +530,11 @@
             </div> -->
             </section>
             <!-- QUALIFICATIONS -->
-            <section id="qualifications" class="mt-32 mb-24">
+            <section id="qualifications" class="pt-32 pb-24">
+                <div class="my-7">
+                    <h2 class="text-3xl font-semibold text-center">My Qualifications</h2>
+                    <p class="text-center text-gray-400">My proudest qualifications</p>
+                </div>
                 <div class="flex mb-12 justify-evenly gap-x-4">
                     <div class="text-xl font-medium text-blue-500">
                         <i class="text-3xl uil uil-graduation-cap"></i>
@@ -575,7 +633,7 @@
                 <div id="achievement"></div>
             </section>
             <!-- CONTACT ME -->
-            <section id="contact-me" class="mt-32">
+            <section id="contact-me" class="pt-32">
                 <div class="my-7">
                     <h2 class="text-3xl font-semibold text-center">Contacts</h2>
                     <p class="text-center text-gray-400">Hits me up!</p>

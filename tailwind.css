@@ -6,8 +6,10 @@
 @tailwind utilities;
 
 @layer base {
-    html {
+    body {
+        @apply transition-colors duration-300;
     }
+
 }
 
 
@@ -18,9 +20,6 @@
 }
 
 
-.skill-bar {
-    animation: skillTrans 3s forwards;
-}
 
 .show-menu {
     @apply bottom-0 !important;
@@ -43,6 +42,14 @@
     @apply items-center;
 }
 
+.active-link {
+    @apply !text-blue-400 ;
+}
+
+.scroll-header {
+    @apply shadow-2xl shadow-black;
+}
+
 /* ================ HOMES ===================== */
 .home__container {
     @apply gap-4;
@@ -63,7 +70,7 @@
 
 .home__social-icon {
     @apply text-xl;
-    @apply dark:text-blue-400;
+    @apply text-blue-400;
 }
 
 .home__blob {
@@ -123,6 +130,28 @@
 
 .home__scroll-arrow {
     @apply text-2xl;
+}
+
+/*================ PROJECTS =====================*/
+
+.skill__list {
+    @apply transition-all;
+}
+
+.skills__close .skill__list {
+    @apply h-0 overflow-hidden;
+}
+
+.skills__open .skill__list {
+    @apply h-max;
+}
+
+.skills__open .skill__arrow:before {
+    @apply rotate-180;
+}
+
+.skill-bar {
+    animation: skillTrans 3s forwards;
 }
 
 
@@ -245,7 +274,7 @@
         @apply z-20;
         @apply p-6;
         @apply rounded-sm;
-        @apply dark:bg-gray-900;
+        @apply dark:bg-gray-800;
         @apply text-white;
         @apply bg-blue-500;
     }

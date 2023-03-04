@@ -14,6 +14,7 @@ module.exports = {
     },
     fontFamily: {
       'sans': ['Poppins', 'sans-serif'],
+      'icomoon': ['icomoon'],
     }
   },
   variants: {

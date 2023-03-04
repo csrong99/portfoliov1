@@ -5,14 +5,14 @@ const navToggle = document.getElementById("nav-toggle")
 const navClose = document.getElementById("nav-close")
 const toggleDark = document.getElementById("")
 
-if(navToggle) {
+if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add("show-menu");
     });
 }
 
-if(navClose) {
-    navClose.addEventListener('click',() => {
+if (navClose) {
+    navClose.addEventListener('click', () => {
         navMenu.classList.remove("show-menu");
     })
 }
@@ -33,21 +33,21 @@ const getCurrentTheme = () => document.documentElement.classList.contains(darkTh
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
 //validate if user previously chose a topic
-if(selectedTheme){
+if (selectedTheme) {
     //if validation fulfilled, ask what the issue was to know if activated/deactivated dark theme
-    document.documentElement.classList[selectedTheme ==='dark' ? 'add' : 'remove'](darkTheme)
+    document.documentElement.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
     themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
 }
 
 // ===================== activate/deactivate theme manually w button =====================
-themeButton.addEventListener('click',()=>{
+themeButton.addEventListener('click', () => {
     //add/remove dark/icon theme
     document.documentElement.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
 
     //save theme and current icon user chose
-    localStorage.setItem('selected-theme',getCurrentTheme())
-    localStorage.setItem('selected-icon',getCurrentIcon())
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
 });
 
 // ===================== SROLL SECTIONS ACTIVE LINK =====================
@@ -68,7 +68,7 @@ function scrollActive() {
         // console.log('sectionTop = ' + sectionTop);
 
 
-        if(scrollY > sectionTop && scrollY <=  sectionTop + sectionHeight) {
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link');
         } else {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link');
@@ -83,7 +83,7 @@ window.addEventListener('scroll', scrollActive);
 
 function scrollHeader() {
     const nav = document.getElementById("header");
-    if(this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header');
+    if (this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header');
 }
 
 window.addEventListener('scroll', scrollHeader);
@@ -95,16 +95,160 @@ const skillsHeader = document.querySelectorAll('.skills__headers');
 
 function toggleSkills() {
     let itemClass = this.parentNode.className;
+    console.log(itemClass);
 
     for (i = 0; i < skillsContent.length; i++) {
-        skillsContent[i].className = 'skill__content skills__close'
+        skillsContent[i].className = 'skills__content skills__close'
     }
 
-    if(itemClass == 'skill__content skills__close') {
-        this.parentNode.className = 'skill__content skills__open'
+    if (itemClass == 'skills__content skills__close') {
+        this.parentNode.className = 'skills__content skills__open'
     }
 }
 
 skillsHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills);
 });
+
+// ===================== QUALIFICATION TABS =====================
+
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('qualification__active')
+        })
+
+        target.classList.add('qualification__active');
+
+        tabs.forEach(tab => {
+            tab.classList.remove('qualification__active')
+        })
+
+        tab.classList.add('qualification__active')
+    })
+})
+
+
+// ===================== SKILLS SPHERE =====================
+const myTags = [
+    'JavaScript', 'CSS', 'HTML',
+    'C', 'C++', 'Spring Boot',
+    'Python', 'Java', 'git',
+    'django', 'Node.js', 'OpenCV',
+    'Angular', 'MySQL', 'jQuery', 'quickFIX',
+    'RabbitMQ', 'Webstreamer', 'SignalR'
+];
+
+// var tagCloud = TagCloud('.content', myTags);
+
+let w = window.innerWidth;
+let radius = 200;
+
+if (w < 768) {
+    radius = (window.innerWidth - 60) / 2.0;
+} else if (w >= 768 && w < 1024) {
+    radius = 300;
+} else if (w >= 1024 && w < 1280) {
+    radius = 300;
+}
+
+var tagCloud = TagCloud('.content', myTags, {
+
+    // radius in px
+    radius: radius,
+
+    // animation speed
+    // slow, normal, fast
+    maxSpeed: 'fast',
+    initSpeed: 'fast',
+
+    // 0 = top
+    // 90 = left
+    // 135 = right-bottom
+    direction: 135,
+
+    // interact with cursor move on mouse out
+    keep: true
+
+});
+
+function showMagic() {
+
+    if (document.getElementById("skill-list").classList.contains("hidden")) {
+        document.getElementById("skill-list").classList.remove("hidden")
+    } else {
+        document.getElementById("skill-list").classList.add("hidden")
+    }
+
+    if (document.getElementById("skill-sphere").classList.contains("hidden")) {
+        document.getElementById("skill-sphere").classList.remove("hidden")
+    } else {
+        document.getElementById("skill-sphere").classList.add("hidden")
+    }
+}
+
+
+
+
+// ===================== CONTACT FORM =====================
+
+$(document).ready(function () {
+
+    // When the form is submitted
+    // $('#contact-form').submit(function(e) {
+    //     e.preventDefault(); // prevent the form from submitting normally
+    //     console.log($(e.target));
+    //     var isValid = $(e.target).validate();
+
+
+    //     console.log("isValid: ", isValid);
+    //     // Send a POST request to the server
+    //     $.post('https://formsubmit.co/el/vixohe', $(this).serialize(), function(response) {
+    //         // Show the success pop-up
+    //         $('#success-popup').show();
+
+    //         // Hide the pop-up when the user clicks the "Close" button
+    //         $('#close-popup').click(function() {
+    //             $('#success-popup').hide();
+    //         });
+
+    //     });
+
+    // });
+
+    // form.addEventListener('submit', () => {
+    //     e.preventDefault();
+    //     $('#success-popup').show();
+    //     setTimeout(() => form.submit(), 2000);
+    // }
+    // );
+
+    $('#contact-form').submit(function (e) {
+        e.preventDefault(); // prevent the form from submitting normally
+        console.log($(e.target));
+        var isValid = $(e.target).validate();
+
+
+        console.log("isValid: ", isValid);
+        // Send a POST request to the server
+        $.post('https://formsubmit.co/el/vixohe', $(this).serialize(), function (response) {
+            // Show the success pop-up
+            $('#success-popup').show();
+
+            // Hide the pop-up when the user clicks the "Close" button
+            $('#close-popup').click(function () {
+                $('#success-popup').hide();
+            });
+
+        });
+
+    });
+
+});
+
+

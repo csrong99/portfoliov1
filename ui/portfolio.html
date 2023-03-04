@@ -1,54 +1,58 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 
-<head>
+<head class="">
+    <title>Chuah Seong Rong</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/public/css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
 
 </head>
 
 <body
     class="text-gray-700 bg-gray-100 scrollbar-thin dark:scrollbar-thumb-gray-600 dark:scrollbar-track-gray-800 scrollbar-thumb-gray-300 scrollbar-track-gray-100 dark:bg-blue-500 dark:text-gray-100">
     <!-- NAVBAR-->
-    <header class="fixed bottom-0 left-0 z-40 w-full text-gray-700 opacity-100 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 md:top-0 md:bottom-auto"
+    <header
+        class="fixed bottom-0 left-0 z-40 w-full text-gray-700 opacity-100 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 md:top-0 md:bottom-auto"
         id="header">
         <nav class="container flex items-center justify-between h-12 max-w-4xl px-6 md:gap-4 md:h-12 md:mx-auto">
-            <a class="font-medium">Seong Rong</a>
+            <a class="font-semibold">Seong Rong</a>
             <div id="nav-menu" class="nav__menu md:ml-auto dark:bg-gray-800">
                 <ul class="grid grid-cols-3 gap-4 list-none md:flex md:gap-x-8">
                     <li class="">
-                        <a href="#landing" class="flex flex-col items-center dark:text-gray-100">
+                        <a href="#landing"
+                            class="flex flex-col items-center font-medium dark:text-gray-100 active-link">
                             <i class="text-2xl uil uil-home md:hidden"></i>Home
                         </a>
                     </li>
                     <li class="">
-                        <a href="#about-me" class="flex flex-col items-center dark:text-gray-100">
-                            <i class="text-2xl uil uil-home md:hidden"></i>About
+                        <a href="#about-me" class="flex flex-col items-center font-medium dark:text-gray-100">
+                            <i class="text-2xl uil uil-smile md:hidden"></i>About
                         </a>
                     </li>
 
                     <li class="">
-                        <a href="#skills" class="flex flex-col items-center dark:text-gray-100">
-                            <i class="text-2xl uil uil-home md:hidden"></i>Skill
+                        <a href="#skills" class="flex flex-col items-center font-medium dark:text-gray-100">
+                            <i class="text-2xl uil uil-setting md:hidden"></i>Skill
                         </a>
                     </li>
                     <li class="">
-                        <a href="#projects" class="flex flex-col items-center dark:text-gray-100">
-                            <i class="text-2xl uil uil-home md:hidden"></i>Projects
+                        <a href="#projects" class="flex flex-col items-center font-medium dark:text-gray-100">
+                            <i class="text-2xl uil uil-flask md:hidden"></i>Projects
                         </a>
                     </li>
                     <li class="">
-                        <a href="#qualifications" class="flex flex-col items-center dark:text-gray-100">
-                            <i class="text-2xl uil uil-home md:hidden"></i>Qualifications
+                        <a href="#qualifications" class="flex flex-col items-center font-medium dark:text-gray-100">
+                            <i class="text-2xl uil uil-code-branch md:hidden"></i>Road Path
                         </a>
                     </li>
                     <li class="">
-                        <a href="#contact-me" class="flex flex-col items-center dark:text-gray-100">
-                            <i class="text-2xl uil uil-home md:hidden"></i>Contract
+                        <a href="#contact-me" class="flex flex-col items-center font-medium dark:text-gray-100">
+                            <i class="text-2xl uil uil-envelope md:hidden"></i>Contract
 
                         </a>
                     </li>
@@ -118,12 +122,18 @@
                     <div class="container grid home__container" id="">
                         <div class="grid home__content">
                             <div class="home__social">
-                                <a href="" class="home__social-icon" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
-                                <a href="" class="home__social-icon" target="_blank"><i class="uil uil-dribbble"></i></a>
-                                <a href="" class="home__social-icon" target="_blank"><i class="uil uil-github-alt"></i></a>
+                                <a href="https://www.linkedin.com/in/chuahseongrong/" class="home__social-icon"
+                                    target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+                                <!-- <a href="https://www.facebook.com/csrong99/" class="home__social-icon"
+                                    target="_blank"><i class="uil uil-facebook"></i></a> -->
+                                <a href="https://chuahsr99.medium.com/" class="home__social-icon" target="_blank"><i
+                                        class="uil uil-medium-m"></i></a>
+                                <a href="https://github.com/csrong99" class="home__social-icon" target="_blank"><i
+                                        class="uil uil-github-alt"></i></a>
                             </div>
                             <div class="home__img">
-                                <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
                                     <mask id="mask0" mask-type="alpha">
                                         <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                         130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
@@ -134,16 +144,20 @@
                                         <path fill="rgb(59 130 246)" d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                                         165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                         129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"></path>
-                                        <image class="home__blob-img" x="12" y="18" xlink:href="/assets/images/portrait_removebg.png"></image>
+                                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z">
+                                        </path>
+                                        <image class="home__blob-img" x="12" y="18"
+                                            xlink:href="/assets/images/portrait_removebg.png"></image>
                                     </g>
                                 </svg>
                             </div>
                             <div class="home__data">
                                 <h1 class="home__title">Hi, I'm Chuah Seong Rong</h1>
-                                <h3 class="home__subtitle">Test test</h3>
-                                <p class="home__description">Test test</p>
-                                <a href="#contact" class="button">
+                                <h3 class="home__subtitle">Full Stack Developer</h3>
+                                <p class="home__description">A avid software engineer that dedicated to build innovative
+                                    software solution and constantly motivated by the challenge of creating complex
+                                    systems</p>
+                                <a href="#contact-me" class="button">
                                     Contact Me <i class="uil uil-message button__icon"></i>
                                 </a>
                             </div>
@@ -161,8 +175,8 @@
             <!-- ABOUT ME -->
             <section id="about-me" class="pt-32 pb-24">
                 <div class="my-7">
-                    <h2 class="text-3xl font-semibold text-center">About Me</h2>
-                    <p class="text-center text-gray-400">A little bit introduction</p>
+                    <h2 class="text-3xl font-semibold text-center title">About Me</h2>
+                    <p class="text-center text-gray-400 subtitle">A little bit introduction</p>
                 </div>
                 <div class="grid gap-5 md:grid-cols-2">
                     <!-- about image-->
@@ -181,24 +195,25 @@
                         <div class="flex gap-3 my-10">
                             <div class="flex-auto w-1/3 text-center justify-evenly">
                                 <span class="block py-2 text-3xl font-semibold md:text-2xl">
-                                    04+
+                                    01+
                                 </span>
-                                <span class="block text-xs font-bold text-gray-400 ">Years Experiences</span>
+                                <span class="block text-sm font-bold text-gray-400 ">Years Experiences</span>
                             </div>
                             <div class="flex-auto w-1/3 text-center justify-evenly">
                                 <span class="block py-2 text-3xl font-semibold md:text-2xl">04+ </span>
-                                <span class="block text-xs font-bold text-gray-400">Years Experiences</span>
+                                <span class="block text-sm font-bold text-gray-400">Personal Project</span>
                             </div>
                             <div class="flex-auto w-1/3 text-center justify-evenly">
-                                <span class="block py-2 text-3xl font-semibold md:text-2xl">04+ </span>
-                                <span class="block text-xs font-bold text-gray-400">Years Experiences</span>
+                                <span class="block py-2 text-3xl font-semibold md:text-2xl">02+</span>
+                                <span class="block text-sm font-bold text-gray-400">Freelance Project</span>
                             </div>
                         </div>
-                        <div
-                            class="w-full max-w-xs py-4 m-auto text-center bg-blue-500 border-opacity-0 rounded-lg">
-                            <span class="text-xl font-bold text-white">Download Me <i
-                                    class="ml-2 text-2xl uil uil-import"></i>
+                        <div class="w-full max-w-xs py-4 m-auto text-center bg-blue-500 border-opacity-0 rounded-lg"">
+                            <a href=" ../assets/doc/Chuah Seong Rong_ResumeV5.pdf" class="w-full h-full">
+                            <span class="text-xl font-bold text-white ">Download Me
+                                <i class="ml-2 text-2xl uil uil-import"></i>
                             </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -207,21 +222,102 @@
             <section id="skills" class="pt-32 pb-24">
                 <!-- Title -->
                 <div class="my-7">
-                    <h2 class="text-3xl font-semibold text-center">Skills</h2>
-                    <p class="text-center text-gray-400">My technical skills</p>
+                    <h2 class="text-3xl font-semibold text-center title">Skills</h2>
+                    <p onclick="showMagic()" class="text-center text-gray-400 subtitle">My technical skills. <br> (click
+                        me to see magic) </p>
                 </div>
                 <!-- Body -->
-                <div class="grid md:mx-auto md:grid-cols-2 md:gap-y-6">
-                    <div class="">
+                <div id="skill-list" class="grid md:mx-auto md:grid-cols-2 md:gap-y-6 ">
+                    <div>
                         <!-- FRONTEND DEVELOPMENT SKILLS -->
-                        <div class="flex-auto w-full mt-4 skills__close">
+                        <div class="skills__content skills__open">
                             <!-- SKILL TITLE -->
-                            <div class="flex flex-row">
+                            <div class="skills__headers">
+                                <div class="flex flex-row ">
+                                    <div class="flex-initial pr-3">
+                                        <i class="text-3xl text-blue-500 uil uil-object-group"></i>
+                                    </div>
+                                    <div class="flex-auto">
+                                        <p class="text-xl font-semibold">Frontend Development</p>
+                                        <p class="text-base font-semibold text-gray-400">>3 years</p>
+                                    </div>
+                                    <div class="flex-initial">
+                                        <i class="text-3xl uil uil-angle-down skills__arrow"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SKILL LIST -->
+                            <div class="flex flex-col w-4/5 max-w-lg mt-4 ml-10 skill__list gap-y-6">
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>HTML</span>
+                                        <span class="float-right font-bold text-blue-400">70%</span>
+                                    </h1>
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-green-500 skill-bar" style="width:70%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>CSS</span>
+                                        <span class="float-right font-semibold text-blue-400">70%</span>
+                                    </h1>
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-yellow-400 skill-bar" style="width:70%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>JS</span>
+                                        <span class="float-right font-semibold text-blue-400">60%</span>
+                                    </h1>
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-blue-500 skill-bar" style="width:60%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>TailwindCSS</span>
+                                        <span class="float-right font-semibold text-blue-400">50%</span>
+                                    </h1>
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-violet-500 skill-bar" style="width:50%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>Angular</span>
+                                        <span class="float-right font-semibold text-blue-400">30%</span>
+                                    </h1>
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-orange-500 skill-bar" style="width:30%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BACKEND DEVELOPMENT SKILLS -->
+                        <div class="skills__content skills__close">
+                            <!-- SKILL TITLE -->
+                            <div class="flex flex-row skills__headers">
                                 <div class="flex-initial pr-3">
                                     <i class="text-3xl text-blue-500 uil uil-brackets-curly"></i>
                                 </div>
                                 <div class="flex-auto">
-                                    <p class="text-xl font-semibold">Frontend Development</p>
+                                    <p class="text-xl font-semibold">Backend Development</p>
                                     <p class="text-base font-semibold text-gray-400">>3 years</p>
                                 </div>
                                 <div class="flex-initial">
@@ -232,10 +328,10 @@
                             <div class="flex flex-col w-4/5 max-w-lg mt-4 ml-10 skill__list gap-y-6">
                                 <div class="">
                                     <h1 class="text-sm font-extrabold">
-                                        <span>HTML</span>
+                                        <span>JAVA</span>
                                         <span class="float-right font-bold text-blue-400">80%</span>
                                     </h1>
-                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
                                         <div class="absolute w-full h-full bg-gray-200 "></div>
                                         <div class="absolute h-full bg-green-500 skill-bar" style="width:80%">
                                         </div>
@@ -244,147 +340,176 @@
 
                                 <div class="">
                                     <h1 class="text-sm font-extrabold">
-                                        <span>HTML</span>
-                                        <span class="float-right font-semibold text-blue-400">80%</span>
+                                        <span>Spring Boot</span>
+                                        <span class="float-right font-semibold text-blue-400">70%</span>
                                     </h1>
-                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
                                         <div class="absolute w-full h-full bg-gray-200 "></div>
-                                        <div class="absolute h-full bg-yellow-400 skill-bar" style="width:80%">
+                                        <div class="absolute h-full bg-yellow-400 skill-bar" style="width:70%">
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="">
                                     <h1 class="text-sm font-extrabold">
-                                        <span>HTML</span>
-                                        <span class="float-right font-semibold text-blue-400">80%</span>
+                                        <span>C# / ASP.NET</span>
+                                        <span class="float-right font-semibold text-blue-400">70%</span>
                                     </h1>
-                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
                                         <div class="absolute w-full h-full bg-gray-200 "></div>
-                                        <div class="absolute h-full bg-blue-500 skill-bar" style="width:80%">
+                                        <div class="absolute h-full bg-blue-500 skill-bar" style="width:70%">
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="">
                                     <h1 class="text-sm font-extrabold">
-                                        <span>HTML</span>
-                                        <span class="float-right font-semibold text-blue-400">80%</span>
+                                        <span>PHP</span>
+                                        <span class="float-right font-semibold text-blue-400">40%</span>
                                     </h1>
-                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
                                         <div class="absolute w-full h-full bg-gray-200 "></div>
-                                        <div class="absolute h-full bg-yellow-400 skill-bar" style="width:80%">
+                                        <div class="absolute h-full bg-violet-500 skill-bar" style="width:40%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>Python - Django</span>
+                                        <span class="float-right font-semibold text-blue-400">10%</span>
+                                    </h1>
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-orange-500 skill-bar" style="width:10%">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div>
                         <!-- DATA SCIENCE SKILLS -->
-                        <div class="flex-auto w-full mt-4 skills__open">
+                        <div class="skills__content skills__close">
                             <!-- SKILL TITLE -->
-                            <div class="flex flex-row">
-                                <div class="flex-initial pr-3">
-                                    <i class="text-3xl text-blue-500 uil uil-brackets-curly"></i>
-                                </div>
-                                <div class="flex-auto">
-                                    <p class="text-xl font-semibold">Frontend Development</p>
-                                    <p class="text-base font-semibold text-gray-400">>3 years</p>
-                                </div>
-                                <div class="flex-initial">
-                                    <i class="text-3xl uil uil-angle-down skill__arrow"></i>
+                            <div class="skills__headers">
+                                <div class="flex flex-row ">
+                                    <div class="flex-initial pr-3">
+                                        <i class="text-3xl text-blue-500 uil uil-channel"></i>
+                                    </div>
+                                    <div class="flex-auto">
+                                        <p class="text-xl font-semibold">AI / Data Science</p>
+                                        <p class="text-base font-semibold text-gray-400">>1 years</p>
+                                    </div>
+                                    <div class="flex-initial">
+                                        <i class="text-3xl uil uil-angle-down skills__arrow"></i>
+                                    </div>
                                 </div>
                             </div>
                             <!-- SKILL LIST -->
                             <div class="flex flex-col w-4/5 max-w-lg mt-4 ml-10 skill__list gap-y-6">
                                 <div class="">
                                     <h1 class="text-sm font-extrabold">
-                                        <span>HTML</span>
-                                        <span class="float-right font-bold text-blue-400">80%</span>
+                                        <span>Python</span>
+                                        <span class="float-right font-bold text-blue-400">70%</span>
                                     </h1>
-                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
                                         <div class="absolute w-full h-full bg-gray-200 "></div>
-                                        <div class="absolute h-full bg-green-500 skill-bar" style="width:80%">
+                                        <div class="absolute h-full bg-green-500 skill-bar" style="width:70%">
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="">
                                     <h1 class="text-sm font-extrabold">
-                                        <span>HTML</span>
-                                        <span class="float-right font-semibold text-blue-400">80%</span>
+                                        <span>R</span>
+                                        <span class="float-right font-semibold text-blue-400">10%</span>
                                     </h1>
-                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
                                         <div class="absolute w-full h-full bg-gray-200 "></div>
-                                        <div class="absolute h-full bg-yellow-400 skill-bar" style="width:80%">
+                                        <div class="absolute h-full bg-yellow-400 skill-bar" style="width:10%">
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="">
                                     <h1 class="text-sm font-extrabold">
-                                        <span>HTML</span>
-                                        <span class="float-right font-semibold text-blue-400">80%</span>
+                                        <span>DeepLearning4j</span>
+                                        <span class="float-right font-semibold text-blue-400">40%</span>
                                     </h1>
-                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
                                         <div class="absolute w-full h-full bg-gray-200 "></div>
-                                        <div class="absolute h-full bg-blue-500 skill-bar" style="width:80%">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="">
-                                    <h1 class="text-sm font-extrabold">
-                                        <span>HTML</span>
-                                        <span class="float-right font-semibold text-blue-400">80%</span>
-                                    </h1>
-                                    <div class="relative w-full h-4 mt-2 overflow-hidden rounded-full skills__content skills__close">
-                                        <div class="absolute w-full h-full bg-gray-200 "></div>
-                                        <div class="absolute h-full bg-yellow-400 skill-bar" style="width:80%">
+                                        <div class="absolute h-full bg-blue-500 skill-bar" style="width:40%">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="">
-                        <!-- CLOUD COMPUTING -->
-                        <div class="flex-auto w-full mt-4">
-                            <div class="flex flex-row">
+                        <!-- CLOUD COMPUTING SKILLS -->
+                        <div class="skills__content skills__close">
+                            <!-- SKILL TITLE -->
+                            <div class="flex flex-row skills__headers">
                                 <div class="flex-initial pr-3">
-                                    <i class="text-3xl text-blue-500 uil uil-cloud-database-tree"></i>
+                                    <i class="text-3xl text-blue-500 uil uil-cloud-data-connection"></i>
                                 </div>
                                 <div class="flex-auto">
-                                    <p class="text-xl font-semibold ">Cloud Computing</p>
-                                    <p class="text-base font-semibold text-gray-400">>3 years</p>
+                                    <p class="text-xl font-semibold">Cloud Computing</p>
+                                    <p class="text-base font-semibold text-gray-400">>1 years</p>
                                 </div>
                                 <div class="flex-initial">
                                     <i class="text-3xl uil uil-angle-down skills__arrow"></i>
                                 </div>
                             </div>
-                        </div>
-                        <!-- CLOUD COMPUTING -->
-                        <div class="flex-auto w-full mt-4">
-                            <div class="flex flex-row">
-                                <div class="flex-initial pr-3">
-                                    <i class="text-3xl text-blue-500 uil uil-cloud-database-tree"></i>
+                            <!-- SKILL LIST -->
+                            <div class="flex flex-col w-4/5 max-w-lg mt-4 ml-10 skill__list gap-y-6">
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>Google Cloud Platform</span>
+                                        <span class="float-right font-bold text-blue-400">30%</span>
+                                    </h1>
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-green-500 skill-bar" style="width:30%">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="flex-auto">
-                                    <p class="text-xl font-semibold ">Cloud Computing</p>
-                                    <p class="text-base font-semibold text-gray-400">>3 years</p>
+
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>Microsoft Azure</span>
+                                        <span class="float-right font-semibold text-blue-400">10%</span>
+                                    </h1>
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-yellow-400 skill-bar" style="width:10%">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="flex-initial">
-                                    <i class="text-3xl uil uil-angle-down skills__arrow"></i>
+
+                                <div class="">
+                                    <h1 class="text-sm font-extrabold">
+                                        <span>Amazon AWS</span>
+                                        <span class="float-right font-semibold text-blue-400">10%</span>
+                                    </h1>
+                                    <div class="relative w-full h-2 mt-2 overflow-hidden rounded-full">
+                                        <div class="absolute w-full h-full bg-gray-200 "></div>
+                                        <div class="absolute h-full bg-blue-500 skill-bar" style="width:10%"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div id="skill-sphere" class="hidden">
+                    <span class="content"></span>
                 </div>
             </section>
             <!-- PROJECTS -->
             <section id="projects" class="pt-32 pb-24">
                 <div class="my-7">
-                    <h2 class="text-3xl font-semibold text-center">Projects</h2>
-                    <p class="text-center text-gray-400">Interesting Project that I have built</p>
+                    <h2 class="text-3xl font-semibold text-center title">Projects</h2>
+                    <p class="text-center text-gray-400 subtitle">Interesting Project that I have built</p>
                 </div>
                 <ul>
                     <!-- PROJECT -->
@@ -416,45 +541,49 @@
                     <li class="featured__project">
                         <div class="project-content">
                             <p class="project-overline">Featured Project</p>
-                            <h3 class="project-title">Project Title</h3>
-                            <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Tenetur, similique? Amet eos unde ipsum dolore. Ea repudiandae necessitatibus
-                                aliquam optio, repellat, placeat rem suscipit debitis quis blanditiis iste
-                                recusandae consequatur?</div>
+                            <h3 class="project-title">Farm Crops Growth Health Imaging Analytics System</h3>
+                            <div class="project-description">A simple machine learning system that can perform object
+                                detection and localization for the farm crops using a trained model.
+                                The model was trained using transfer learning method.
+                                An user-friendly frontend was also developed to ease the user.</div>
                             <ul class="project-tech-list">
-                                <li>Firebase</li>
-                                <li>Python</li>
-                                <li>Yolov5</li>
+                                <li><span class="icon-yologo_2"></span></li>
+                                <li><span class="icon-python"></span></li>
+                                <li><span class="icon-firebase"></span></li>
+                                <li><span class="icon-django"></span></li>
                             </ul>
                             <div class="project-links">
-                                <i class="text-3xl text-blue-500 uil uil-github-alt"></i>
-                                <i class="text-3xl text-blue-500 uil uil-external-link-alt"></i>
+                                <a href="https://github.com/csrong99/FYP"><i
+                                        class="text-3xl text-blue-500 uil uil-github-alt"></i></a>
                             </div>
                         </div>
                         <div class="project-image">
-                            <img class="" src="/assets/images/project-test.png" />
+                            <img src="/assets/images/project-test.png" />
                         </div>
                     </li>
                     <li class="featured__project">
                         <div class="project-content">
                             <p class="project-overline">Featured Project</p>
-                            <h3 class="project-title">Project Title</h3>
-                            <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Tenetur, similique? Amet eos unde ipsum dolore. Ea repudiandae necessitatibus
-                                aliquam optio, repellat, placeat rem suscipit debitis quis blanditiis iste
-                                recusandae consequatur?</div>
+                            <h3 class="project-title">University Club Webpage</h3>
+                            <div class="project-description">A simple static webpage that aims to create a visually appealing 
+                                and user-friendly online platform to showcase the activities and events of the club. Key features 
+                                will include event calendars, photo galleries, member profiles, upcoming event and etc.
+                            </div>
                             <ul class="project-tech-list">
-                                <li>Firebase</li>
-                                <li>Python</li>
-                                <li>Yolov5</li>
+                                <li><span class="icon-html5"></span></li>
+                                <li><span class="icon-javascript"></span></li>
+                                <li><span class="icon-css3"></span></li>
+                                <li><span class="icon-firebase"></span></li>
                             </ul>
                             <div class="project-links">
-                                <i class="text-3xl text-blue-500 uil uil-github-alt"></i>
-                                <i class="text-3xl text-blue-500 uil uil-external-link-alt"></i>
+                                <a href="https://github.com/GDSCTARUC/gdsctaruc.github.io" target="_blank"><i
+                                        class="text-3xl text-blue-500 uil uil-github-alt"></i></a>
+                                <a href="https://gdsctaruc.github.io/" target="_blank"><i
+                                        class="text-3xl text-blue-500 uil uil-external-link-alt"></i></a>
                             </div>
                         </div>
                         <div class="project-image">
-                            <img class="" src="/assets/images/project-test.png" />
+                            <img src="/assets/images/project-2.png" />
                         </div>
                     </li>
                 </ul>
@@ -532,25 +661,30 @@
             <!-- QUALIFICATIONS -->
             <section id="qualifications" class="pt-32 pb-24">
                 <div class="my-7">
-                    <h2 class="text-3xl font-semibold text-center">My Qualifications</h2>
+                    <h2 class="text-3xl font-semibold text-center">My Road Path</h2>
                     <p class="text-center text-gray-400">My proudest qualifications</p>
                 </div>
                 <div class="flex mb-12 justify-evenly gap-x-4">
-                    <div class="text-xl font-medium text-blue-500">
-                        <i class="text-3xl uil uil-graduation-cap"></i>
-                        Education
+                    <div class="text-base font-medium md:text-xl qualification__button qualification__active"
+                        data-target="#education">
+                        <i class="text-base md:text-xl uil uil-graduation-cap"></i>
+                        Education /
+                        <i class="text-base md:text-xl uil uil-briefcase-alt"></i> Career
                     </div>
-                    <div class="text-xl font-medium text-gray-400">
-                        <i class="text-2xl uil uil-trophy"></i>
+                    <div class="text-base font-medium text-gray-400 md:text-xl qualification__button"
+                        data-target="#achievement">
+                        <i class="text-base md:text-xl uil uil-trophy"></i>
                         Achievement
                     </div>
                 </div>
-                <div class="container w-full h-full mx-auto">
+                <!-- EDUCATION / Career -->
+                <div id="education" class="container w-full h-full mx-auto qualification qualification__active"
+                    data-content="education">
                     <div class="relative h-full overflow-hidden wrap">
                         <div class="absolute h-full border-l-2 border-gray-700 dark:border-white border-opacity-20"
                             style="left: 50%">
                         </div>
-                        <!-- secondary school-->
+
                         <div class="flex flex-row-reverse items-center justify-between w-full mb-8 right-timeline">
                             <div class="order-1 w-5/12"></div>
                             <div
@@ -558,16 +692,14 @@
                                 <h1 class="mx-auto text-lg font-semibold text-white dark:text-white">1</h1>
                             </div>
                             <div class="order-1 w-5/12">
-                                <h3 class="mb-3 text-lg font-bold text-gray-800 dark:text-white">Lorem Ipsum</h3>
+                                <h3 class="mb-1 text-lg font-medium text-right text-gray-800 dark:text-white">IT
+                                    Specialist</h3>
                                 <p
-                                    class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
-                                    Lorem Ipsum
-                                    is simply dummy
-                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                    standard dummy
-                                    text ever since the 1500s, when an unknown printer took a galley of type and
-                                    scrambled it to make a
-                                    type specimen book.</p>
+                                    class="text-sm leading-snug tracking-wide text-right text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    iFast Capital Sdn Bhd</p>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-right text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    2021-Present </p>
                             </div>
                         </div>
 
@@ -577,36 +709,33 @@
                                 <h1 class="mx-auto text-lg font-semibold text-white">2</h1>
                             </div>
                             <div class="order-1 w-5/12">
-                                <h3 class="mb-3 text-lg font-bold text-right text-gray-800 dark:text-white ">Lorem Ipsum
-                                </h3>
+                                <h3 class="mb-1 text-lg font-medium text-gray-800 dark:text-white">Internship - Software
+                                    Engineer</h3>
                                 <p
-                                    class="text-sm leading-snug tracking-wide text-right text-gray-900 text-opacity-100 dark:text-gray-300">
-                                    Lorem Ipsum
-                                    is simply dummy
-                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                    standard dummy
-                                    text ever since the 1500s, when an unknown printer took a galley of type and
-                                    scrambled it to make a
-                                    type specimen book.</p>
+                                    class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    Nettium</p>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    2021 </p>
                             </div>
                         </div>
 
                         <div class="flex flex-row-reverse items-center justify-between w-full mb-8 right-timeline">
                             <div class="order-1 w-5/12"></div>
-                            <div class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl">
-                                <h1 class="mx-auto text-lg font-semibold text-white">3</h1>
+                            <div
+                                class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl dark:bg-blue-500">
+                                <h1 class="mx-auto text-lg font-semibold text-white dark:text-white">3</h1>
                             </div>
                             <div class="order-1 w-5/12">
-                                <h3 class="mb-3 text-lg font-bold text-gray-800 dark:text-white">Lorem Ipsum</h3>
+                                <h3 class="mb-1 text-lg font-medium text-right text-gray-800 dark:text-white"><i
+                                        class="text-lg uil uil-graduation-cap"></i> Certified
+                                    Engineer in Computer Vision</h3>
                                 <p
-                                    class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
-                                    Lorem Ipsum
-                                    is simply dummy
-                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                    standard dummy
-                                    text ever since the 1500s, when an unknown printer took a galley of type and
-                                    scrambled it to make a
-                                    type specimen book.</p>
+                                    class="text-sm leading-snug tracking-wide text-right text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    CERTIFAI - Skymind</p>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-right text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    2021 </p>
                             </div>
                         </div>
 
@@ -616,21 +745,180 @@
                                 <h1 class="mx-auto text-lg font-semibold text-white">4</h1>
                             </div>
                             <div class="order-1 w-5/12">
-                                <h3 class="mb-3 text-lg font-bold text-gray-800 dark:text-white">Lorem Ipsum</h3>
+                                <h3 class="mb-1 text-lg font-medium text-gray-800 dark:text-white"><i
+                                        class="text-lg uil uil-graduation-cap"></i> Bachelor's Degree -
+                                    Software Engineering</h3>
                                 <p
                                     class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
-                                    Lorem Ipsum
-                                    is simply dummy
-                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                    standard dummy
-                                    text ever since the 1500s, when an unknown printer took a galley of type and
-                                    scrambled it to make a
-                                    type specimen book.</p>
+                                    Tunku Abdul Rahman University College</p>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    2020-2022 </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row-reverse items-center justify-between w-full mb-8 right-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl">
+                                <h1 class="mx-auto text-lg font-semibold text-white">5</h1>
+                            </div>
+                            <div class="order-1 w-5/12">
+                                <h3 class="mb-1 text-lg font-medium text-right text-gray-800 dark:text-white"><i
+                                        class="text-lg uil uil-graduation-cap"></i> CSX
+                                    Cybersecurity Fundamentals Certificate (CSXF)</h3>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-right text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    ISACA</p>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-right text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    2019</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between w-full mb-8 left-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl">
+                                <h1 class="mx-auto text-lg font-semibold text-white">6</h1>
+                            </div>
+                            <div class="order-1 w-5/12">
+                                <h3 class="mb-2 text-lg font-medium leading-tight text-gray-800 dark:text-white"><i
+                                        class="text-lg uil uil-graduation-cap"></i> Cisco
+                                    Certified Network Associate Routing and Switching (CCNA)</h3>
+                                <p
+                                    class="text-sm leading-tight tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    CISCO</p>
+                                <p
+                                    class="text-sm leading-tight tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    2019</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="achievement"></div>
+
+                <!-- ARCHIEVEMENT -->
+                <div id="achievement" class="container w-full h-full mx-auto qualification" data-content="achievement">
+                    <div class="relative h-full overflow-hidden wrap">
+                        <div class="absolute h-full border-l-2 border-gray-700 dark:border-white border-opacity-20"
+                            style="left: 50%">
+                        </div>
+                        <div class="flex flex-row-reverse items-center justify-between w-full mb-8 right-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div
+                                class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl dark:bg-blue-500">
+                                <h1 class="mx-auto text-lg font-semibold text-white dark:text-white">1</h1>
+                            </div>
+                            <div class="order-1 w-5/12">
+                                <a href="https://www.tarc.edu.my/news.jsp?cat_id=56EBCDAD-D3D4-4D3B-8AC4-44CAF115AE1E&fmenuid=63470210-0077-4156-8326-47DE252878A7&news_id=9F47075C-EEAD-4D84-A11E-07D4A5965A46"
+                                    target="_blank">
+                                    <h3 class="mb-1 text-lg font-medium text-right text-blue-500">Battle
+                                        of
+                                        Hackers 2019</h3>
+                                </a>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-right text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    Champion</p>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-right text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    Oct 2019 </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between w-full mb-8 left-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl">
+                                <h1 class="mx-auto text-lg font-semibold text-white">2</h1>
+                            </div>
+                            <div class="order-1 w-5/12">
+                                <h3 class="mb-1 text-lg font-medium text-gray-800 dark:text-white">Microsoft Imagine Cup
+                                    2018 (TARUC): Hackathon</h3>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    1st Runner-up </p>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    Oct 2018</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row-reverse items-center justify-between w-full mb-8 right-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl">
+                                <h1 class="mx-auto text-lg font-semibold text-white">3</h1>
+                            </div>
+                            <div class="order-1 w-5/12">
+                                <a href="https://tarc.edu.my/focs/news.jsp?cat_id=8A4F53DC-6047-461B-9A26-1CBAF3DEE153&fmenuid=6425D81D-D6EC-4154-89E0-EB8F755EF868&news_id=D33E0E5B-6F48-4B50-97D9-BAD939AF3829"
+                                    target="_blank">
+                                    <h3 class="mb-1 text-lg font-medium text-right text-blue-500">
+                                        F-Secure
+                                        Cyber Security Competition</h3>
+                                </a>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-right text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    2nd Runner-up</p>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-right text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    Jun 2020</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between w-full mb-8 left-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl">
+                                <h1 class="mx-auto text-lg font-semibold text-white">4</h1>
+                            </div>
+                            <div class="order-1 w-5/12">
+                                <a href="https://www.tarc.edu.my/news.jsp?cat_id=56EBCDAD-D3D4-4D3B-8AC4-44CAF115AE1E&fmenuid=63470210-0077-4156-8326-47DE252878A7&news_id=DEB2C195-8FEF-4824-A992-2CE424BB89B8"
+                                    target="_blank">
+                                    <h3 class="mb-2 text-lg font-medium leading-tight text-blue-500">
+                                        Algo League Challenge</h3>
+                                </a>
+                                <p
+                                    class="text-sm leading-tight tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    2nd Runner-up</p>
+                                <p
+                                    class="text-sm leading-tight tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    Dec 2019</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row-reverse items-center justify-between w-full mb-8 right-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl">
+                                <h1 class="mx-auto text-lg font-semibold text-white">5</h1>
+                            </div>
+                            <div class="order-1 w-5/12">
+                                <h3
+                                    class="mb-2 text-lg font-medium leading-tight text-right text-gray-800 dark:text-white">
+                                    Codetisan Coding Challenge</h3>
+                                <p
+                                    class="text-sm leading-tight tracking-wide text-right text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    Top 10</p>
+                                <p
+                                    class="text-sm leading-tight tracking-wide text-right text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    Sep 2022</p>
+
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between w-full mb-8 left-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="z-20 flex items-center order-1 w-8 h-8 bg-blue-500 rounded-full shadow-xl">
+                                <h1 class="mx-auto text-lg font-semibold text-white">6</h1>
+                            </div>
+                            <div class="order-1 w-5/12">
+                                <h3 class="mb-1 text-lg font-medium text-gray-800 dark:text-white">Shopee Code League
+                                    2020(Student Category)</h3>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    Participant</p>
+                                <p
+                                    class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-300">
+                                    Aug 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
             <!-- CONTACT ME -->
             <section id="contact-me" class="pt-32">
@@ -651,37 +939,45 @@
                             <i class="mr-3 text-4xl text-blue-500 uil uil-envelope"></i>
                             <div>
                                 <p class="mb-1 text-xl font-semibold">Email</p>
-                                <p class="text-sm text-gray-400">+60189188618</p>
+                                <p class="text-sm text-gray-400">chuahsr99.work@gmail.com</p>
                             </div>
                         </div>
                         <div class="flex items-center mb-4">
                             <i class="mr-3 text-4xl text-blue-500 uil uil-map-marker"></i>
                             <div>
                                 <p class="mb-1 text-xl font-semibold">Location</p>
-                                <p class="text-sm text-gray-400">+60189188618</p>
+                                <p class="text-sm text-gray-400">Selangor, Kuala Lumpur</p>
                             </div>
                         </div>
                     </div>
-                    <form action="" class="grid gap-y-8 contact__form">
+                    <form action="https://formsubmit.co/el/vixohe" method="post" class="grid gap-y-8 contact__form"
+                        id="contact-form">
+                        <input name="_subject" type="hidden" value="Potential Offer / Project">
+                        <input type="hidden" name="_template" value="table">
                         <div class="rounded-lg contact__content">
                             <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <input nmae="name" type="text" class="contact__input">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Email</label>
-                            <input type="text" class="contact__input">
+                            <input name="email" type="email" class="contact__input">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" type="text" class="contact__input"></textarea>
+                            <textarea name="message" id="" cols="0" rows="7" type="text"
+                                class="contact__input"></textarea>
                         </div>
                         <div>
-                            <button href="#" class="border-0 button">
+                            <button id="contact-form-submit-btn" type="submit" form="contact-form" class="border-0 button">
                                 Send Message
                                 <i class="uil uil-message"></i>
                             </button>
                         </div>
                     </form>
+                    <div id="success-popup" class="popup">
+                        <p>Thank you for submitting the form!</p>
+                        <button id="close-popup">Close</button>
+                    </div>
                     <!-- <div class="grid place-content-center">
                 <div
                     class="max-w-sm p-8 mx-auto text-center text-white bg-gradient-to-r from-blue-400 to-indigo-500 rounded-2xl h-72">
@@ -714,19 +1010,27 @@
         <div class="max-w-5xl px-6 m-auto">
             <div class="container grid gap-6 md:grid-cols-3">
                 <div class="">
-                    <p class="mb-3 text-3xl font-semibold md:text-2xl lg:text-3xl">Chuah Seong Rong</p>
-                    <p class="text-lg">Software Engineer</p>
+                    <a href="#">
+                        <p class="mb-3 text-3xl font-semibold md:text-2xl lg:text-3xl">Chuah Seong Rong</p>
+                    </a>
+                    <p class="text-lg">Full Stack Developer</p>
                 </div>
 
-                <ul class="flex flex-col text-lg md:flex-row gap-y-4 ">
-                    <li class="flex-1">Portfolio</li>
-                    <li class="flex-1">Portfolio</li>
-                    <li class="flex-1">Portfolio</li>
+                <ul class="flex flex-col text-lg md:flex-row gap-x-4 ">
+                    <a href="#about-me">
+                        <li class="flex-1 text-lg font-semibold">About Me</li>
+                    </a>
+                    <a href="#projects">
+                        <li class="flex-1 text-lg font-semibold">Project</li>
+                    </a>
+                    <a href="#contact-me">
+                        <li class="flex-1 text-lg font-semibold">Contact Me</li>
+                    </a>
                 </ul>
                 <div class="flex flex-row mr-4 text-3xl gap-x-3">
-                    <a class="pr-4 justify-self-end"><i class="uil uil-facebook-f"></i></a>
-                    <a class="pr-4 justify-self-end"><i class="uil uil-instagram"></i></a>
-                    <a class="pr-4 justify-self-end"><i class="uil uil-linkedin-alt"></i></a>
+                    <a class="pr-4 justify-self-end" href="https://chuahsr99.medium.com/"><i class="uil uil-medium-m"></i></a>
+                    <a class="pr-4 justify-self-end" href="https://github.com/csrong99"><i class="uil uil-github-alt"></i></a>
+                    <a class="pr-4 justify-self-end" href="https://www.linkedin.com/in/chuahseongrong/"><i class="uil uil-linkedin-alt"></i></a>
                 </div>
             </div>
         </div>
@@ -774,23 +1078,83 @@
             opacity: 0,
         }
 
-        var slideDownWithDelay = {
+        var slideLeft = {
             distance: '60px',
-            origin: 'top',
+            origin: 'left',
             opacity: 0,
-            delay: 100,
+            interval: 1000,
         }
 
-        ScrollReveal({ 
+
+        var slideRight = {
             distance: '60px',
+            origin: 'right',
+            opacity: 0,
+            interval: 1000,
+        }
+
+        var slideUp = {
+            distance: '60px',
+            origin: 'bottom',
+            opacity: 0,
+            interval: 1000,
+        }
+
+        // var slideDownWithDelay100 = {
+        //     distance: '60px',
+        //     origin: 'top',
+        //     opacity: 0,
+        //     delay: 100,
+        // }
+
+        // var slideDownWithDelay200 = {
+        //     distance: '60px',
+        //     origin: 'top',
+        //     opacity: 0,
+        //     delay: 200,
+        // }
+
+        // var slideDownWithDelay300 = {
+        //     distance: '60px',
+        //     origin: 'top',
+        //     opacity: 0,
+        //     delay: 300,
+        // }
+
+        ScrollReveal({
+            distance: '60px',
+            origin: 'top',
             duration: 2500,
-            delay: 400
+            interval: 400,
         });
 
         ScrollReveal().reveal('#landing', slideDown);
-        ScrollReveal().reveal('#landing .home__title', slideDownWithDelay);
-        ScrollReveal().reveal('#landing .home__subtitle', slideDownWithDelay);
-        ScrollReveal().reveal('#landing .home__description', slideDownWithDelay);
+        // ScrollReveal().reveal('#landing .home__title', slideDownWithDelay100);
+        // ScrollReveal().reveal('#landing .home__subtitle', slideDownWithDelay200);
+        // ScrollReveal().reveal('#landing .home__description', slideDownWithDelay300);
+        ScrollReveal().reveal('#landing .home__social-icon', { interval: 500 });
+        ScrollReveal().reveal('#landing .home__data *', { interval: 800 });
+
+
+        ScrollReveal().reveal('#about-me', slideDown);
+        ScrollReveal().reveal('#about-me .title', { interval: 500 });
+        ScrollReveal().reveal('#about-me .subtitle', { interval: 1000 });
+
+        ScrollReveal().reveal('#skills', slideDown);
+        ScrollReveal().reveal('#skills .title', { interval: 500 });
+        ScrollReveal().reveal('#skills .subtitle', { interval: 1000 });
+
+
+        // ScrollReveal().reveal('#projects', slideDown);
+        // ScrollReveal().reveal('#projects .featured__project .project-content', slideUp);
+
+        // ScrollReveal().reveal('#projects .featured__project .project-content .project-overline', { interval: 500 });
+        // ScrollReveal().reveal('#projects .featured__project .project-content .project-title', { interval: 800 });
+        // ScrollReveal().reveal('#projects .featured__project .project-content .project-description', { interval: 1100 });
+        // ScrollReveal().reveal('#projects .featured__project .project-content .project-tech-list', { interval: 1400 });
+        // ScrollReveal().reveal('#projects .featured__project .project-content .project-links', { interval: 1700 });
+        // ScrollReveal().reveal('#projects .featured__project:nth-of-type(2n+1) .project-image', slideDown);
+        // ScrollReveal().reveal('#projects .featured__project .project-image', slideRight);
     </script>
 </body>
 

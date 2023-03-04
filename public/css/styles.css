@@ -440,6 +440,23 @@ body{
   transition-duration: 300ms;
 }
 
+@font-face {
+  font-family: 'icomoon';
+
+  src:  url('/assets/fonts/icomoon.eot');
+
+  src:  url('/assets/fonts/icomoon.eot') format('embedded-opentype'),
+            url('/assets/fonts/icomoon.ttf') format('truetype'),
+            url('/assets/fonts/icomoon.woff') format('woff'),
+            url('/assets/fonts/icomoon.svg') format('svg');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: block;
+}
+
 *, ::before, ::after{
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -517,6 +534,10 @@ body{
   .container{
     max-width: 1536px;
   }
+}
+
+.static{
+  position: static;
 }
 
 .fixed{
@@ -666,16 +687,20 @@ body{
   margin-bottom: 2rem;
 }
 
-.mb-3{
-  margin-bottom: 0.75rem;
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .mr-3{
   margin-right: 0.75rem;
 }
 
-.mb-1{
-  margin-bottom: 0.25rem;
+.mb-3{
+  margin-bottom: 0.75rem;
 }
 
 .mb-6{
@@ -714,6 +739,10 @@ body{
   display: inline-flex;
 }
 
+.table{
+  display: table;
+}
+
 .grid{
   display: grid;
 }
@@ -730,12 +759,12 @@ body{
   height: auto;
 }
 
-.h-4{
-  height: 1rem;
-}
-
 .h-full{
   height: 100%;
+}
+
+.h-2{
+  height: 0.5rem;
 }
 
 .h-24{
@@ -756,10 +785,6 @@ body{
 
 .h-2\.5{
   height: 0.625rem;
-}
-
-.h-2{
-  height: 0.5rem;
 }
 
 .min-h-screen{
@@ -950,10 +975,6 @@ body{
   row-gap: 2rem;
 }
 
-.gap-y-4{
-  row-gap: 1rem;
-}
-
 .space-y-6 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -972,6 +993,10 @@ body{
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .rounded-lg{
@@ -1057,6 +1082,16 @@ body{
 .bg-yellow-400{
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+
+.bg-violet-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(139 92 246 / var(--tw-bg-opacity));
+}
+
+.bg-orange-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 
 .bg-indigo-900{
@@ -1248,11 +1283,6 @@ body{
   line-height: 2.25rem;
 }
 
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1263,12 +1293,12 @@ body{
   line-height: 2.5rem;
 }
 
-.font-medium{
-  font-weight: 500;
-}
-
 .font-semibold{
   font-weight: 600;
+}
+
+.font-medium{
+  font-weight: 500;
 }
 
 .font-bold{
@@ -1289,6 +1319,10 @@ body{
 
 .leading-snug{
   line-height: 1.375;
+}
+
+.leading-tight{
+  line-height: 1.25;
 }
 
 .tracking-wide{
@@ -1467,6 +1501,111 @@ body{
   --scrollbar-thumb: #d1d5db !important;
 }
 
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yologo_2:before {
+  content: "\e900";
+}
+
+.icon-django:before {
+  content: "\e901";
+  color: #092e20;
+}
+
+.dark .icon-django:before{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.icon-firebase:before {
+  content: "\e902";
+  color: #ffca28;
+}
+
+.dark .icon-firebase:before{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.icon-html5:before {
+  content: "\e903";
+  color: #e34f26;
+}
+
+.dark .icon-html5:before{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.icon-javascript:before {
+  content: "\e904";
+  color: #f7df1e;
+}
+
+.dark .icon-javascript:before{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.icon-python:before {
+  content: "\e905";
+  color: #3776ab;
+}
+
+.dark .icon-python:before{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.icon-css3:before {
+  content: "\eae6";
+  color: #264de4;
+}
+
+.dark .icon-css3:before{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.tagcloud {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 650;
+  /* margin-left: 30%; */
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
+  margin: auto;
+}
+
+/* .tagcloud--item:hover {
+    color: #36454F;
+} */
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  padding: 20px;
+  z-index: 9999;
+}
+
 @-webkit-keyframes skillTrans {
   from {
     transform: translateX(-100%);
@@ -1510,10 +1649,15 @@ body{
 }
 
 .scroll-header{
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  --tw-shadow-color: #000;
+  --tw-shadow-color: #e5e7eb;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.dark .scroll-header{
+  --tw-shadow-color: #1f2937;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -1616,7 +1760,7 @@ body{
   line-height: 2rem;
 }
 
-/*================ PROJECTS =====================*/
+/*================ SKILLS =====================*/
 
 .skill__list{
   transition-property: all;
@@ -1643,6 +1787,27 @@ body{
 .skill-bar {
   -webkit-animation: skillTrans 3s forwards;
           animation: skillTrans 3s forwards;
+}
+
+.skills__content{
+  margin-top: 1rem;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+/*================ QUALIFICATIONS =====================*/
+
+.qualification{
+  display: none;
+}
+
+.qualification__active{
+  display: block;
+}
+
+.qualification__button.qualification__active{
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 /*================ PROJECTS =====================*/
@@ -1684,8 +1849,9 @@ body{
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
-.featured__project .project-description {
-}
+/* .featured__project .project-description {
+    
+} */
 
 .featured__project .project-tech-list{
   display: flex;
@@ -1727,6 +1893,10 @@ body{
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   /* border-radius: var(--border-radius);
     mix-blend-mode: multiply;
     filter: grayscale(100%) contrast(1) brightness(90%);
@@ -1760,6 +1930,12 @@ body{
     outline-offset: 2px;
   }
 
+  html:not(.dark) .featured__project .project-image{
+    background-color: transparent;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+
   .featured__project .project-description{
     --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -1775,7 +1951,7 @@ body{
 
   .dark .featured__project .project-description{
     --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   }
 
   .featured__project .project-description{
@@ -2116,6 +2292,11 @@ body{
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

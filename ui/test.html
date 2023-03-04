@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Submit Form Example</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style>
+		.popup {
+			display: none;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #ffffff;
+			border: 1px solid #999999;
+			padding: 20px;
+			z-index: 9999;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Submit Form Example</h1>
+
+	<form id="my-form">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br><br>
+		<label for="message">Message:</label><br>
+		<textarea id="message" name="message" rows="5"></textarea><br><br>
+		<button type="submit">Submit</button>
+	</form>
+
+	<div id="success-popup" class="popup">
+		<p>Thank you for submitting the form!</p>
+		<button id="close-popup">Close</button>
+	</div>
+
+	<script>
+		$(document).ready(function() {
+
+			// When the form is submitted
+			$('#my-form').submit(function(e) {
+				e.preventDefault(); // prevent the form from submitting normally
+				// Send a POST request to the server
+				$.post('/submit-form', $(this).serialize(), function(response) {
+
+					// Show the success pop-up
+					$('#success-popup').show();
+
+					// Hide the pop-up when the user clicks the "Close" button
+					$('#close-popup').click(function() {
+						$('#success-popup').hide();
+					});
+
+				});
+
+			});
+
+		});
+	</script>
+
+</body>
+</html>

@@ -437,7 +437,7 @@
         @apply left-0;
         @apply w-full;
         @apply px-6;
-        @apply py-8;
+        @apply pt-8 pb-11;
         @apply text-gray-700;
         @apply transition-all;
         @apply duration-300;

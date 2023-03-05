@@ -94,7 +94,7 @@ const skillsContent = document.getElementsByClassName('skills__content');
 const skillsHeader = document.querySelectorAll('.skills__headers');
 
 function toggleSkills() {
-    let itemClass = this.parentNode.className;
+    let itemClass = this.parentNode.classList;
     console.log(itemClass);
 
     for (i = 0; i < skillsContent.length; i++) {
@@ -103,6 +103,12 @@ function toggleSkills() {
 
     if (itemClass == 'skills__content skills__close') {
         this.parentNode.className = 'skills__content skills__open'
+    }
+
+    if (itemClass.contains('skills__content') &&
+        itemClass.contains('skills__close')) {
+        this.parentNode.classList.remove('skills__close');
+        this.parentNode.classList.add('skills__open');
     }
 }
 
@@ -114,6 +120,7 @@ skillsHeader.forEach((el) => {
 
 const tabs = document.querySelectorAll('[data-target]'),
     tabContents = document.querySelectorAll('[data-content]');
+
 
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -130,6 +137,8 @@ tabs.forEach(tab => {
         })
 
         tab.classList.add('qualification__active')
+
+        // ScrollReveal().reveal('.qualification__active', { reset: true });
     })
 })
 
@@ -251,4 +260,97 @@ $(document).ready(function () {
 
 });
 
+// ===================== SCROLLREVEAL JS =====================
 
+
+var slideDown = {
+    distance: '60px',
+    origin: 'top',
+    opacity: 0,
+}
+
+var slideLeft = {
+    distance: '60px',
+    origin: 'left',
+    opacity: 0,
+    interval: 1000,
+}
+
+
+var slideRight = {
+    distance: '60px',
+    origin: 'right',
+    opacity: 0,
+    interval: 1000,
+}
+
+var slideUp = {
+    distance: '60px',
+    origin: 'bottom',
+    opacity: 0,
+    interval: 1000,
+}
+
+// var slideDownWithDelay100 = {
+//     distance: '60px',
+//     origin: 'top',
+//     opacity: 0,
+//     delay: 100,
+// }
+
+// var slideDownWithDelay200 = {
+//     distance: '60px',
+//     origin: 'top',
+//     opacity: 0,
+//     delay: 200,
+// }
+
+// var slideDownWithDelay300 = {
+//     distance: '60px',
+//     origin: 'top',
+//     opacity: 0,
+//     delay: 300,
+// }
+
+ScrollReveal({
+    distance: '60px',
+    origin: 'top',
+    duration: 2400,
+    // interval: 400,
+});
+
+if (window.innerWidth >= 768) {
+    ScrollReveal().reveal('#header .a_sr', { interval: 400 });
+}
+
+// ScrollReveal().reveal('#landing .home__title', slideDownWithDelay100);
+// ScrollReveal().reveal('#landing .home__subtitle', slideDownWithDelay200);
+// ScrollReveal().reveal('#landing .home__description', slideDownWithDelay300);
+ScrollReveal().reveal('#landing .home__social-icon', { interval: 400 });
+ScrollReveal().reveal('#landing .home__data *', { interval: 600 });
+
+
+ScrollReveal().reveal('#about-me .a_sr', { interval: 400 });
+// ScrollReveal().reveal('#about-me .title', { interval: 500 });
+// ScrollReveal().reveal('#about-me .subtitle', {delay: 500, interval: 500 });
+// ScrollReveal().reveal('#about-me .about-me__content', {delay: 500, interval: 500 });
+// ScrollReveal().reveal('#about-me .subtitle', {delay: 500, interval: 500 });
+
+ScrollReveal().reveal('#skills .a_sr', { interval: 400 });
+// ScrollReveal().reveal('#skills .title', { interval: 500 });
+// ScrollReveal().reveal('#skills .subtitle', { interval: 1000 });
+
+
+ScrollReveal().reveal('#projects .a_sr', { interval: 400 });
+
+ScrollReveal().reveal('#qualifications .a_sr', { interval: 400 });
+ScrollReveal().reveal('#contact-me .a_sr', { interval: 400 });
+// ScrollReveal().reveal('#projects .featured__project .project-content', slideUp);
+
+// ScrollReveal().reveal('#projects .featured__project .project-content .project-overline', { interval: 500 });
+// ScrollReveal().reveal('#projects .featured__project .project-content .project-title', { interval: 800 });
+// ScrollReveal().reveal('#projects .featured__project .project-content .project-description', { interval: 1100 });
+// ScrollReveal().reveal('#projects .featured__project .project-content .project-tech-list', { interval: 1400 });
+// ScrollReveal().reveal('#projects .featured__project .project-content .project-links', { interval: 1700 });
+// ScrollReveal().reveal('#projects .featured__project:nth-of-type(2n+1) .project-image', slideDown);
+// ScrollReveal().reveal('#projects .featured__project .project-image', slideRight);

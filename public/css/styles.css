@@ -1562,18 +1562,6 @@ body{
     color: #36454F;
 } */
 
-.popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  border: 1px solid #999999;
-  padding: 20px;
-  z-index: 9999;
-}
-
 @-webkit-keyframes skillTrans {
   from {
     transform: translateX(-100%);
@@ -2045,6 +2033,138 @@ body{
   }
 }
 
+.circle,
+  .circle-border {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.circle {
+  z-index: 1;
+  position: relative;
+}
+
+.dark .circle{
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.circle {
+  transform: scale(1);
+  -webkit-animation: success-anim 700ms ease;
+          animation: success-anim 700ms ease;
+}
+
+.circle-border {
+  z-index: 0;
+  position: absolute;
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+  transform: scale(1.1);
+  -webkit-animation: circle-anim 400ms ease;
+          animation: circle-anim 400ms ease;
+}
+
+@-webkit-keyframes success-anim {
+  0% {
+    transform: scale(0);
+  }
+
+  30% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes success-anim {
+  0% {
+    transform: scale(0);
+  }
+
+  30% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes circle-anim {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes circle-anim {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dark .popup{
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.popup {
+  padding: 20px;
+  z-index: 9999;
+  height: 150px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px 10px rgba(#000, 0.05);
+}
+
+.success::before,
+  .success::after {
+  content: "";
+  display: block;
+  height: 4px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+  position: absolute;
+}
+
+.success::before {
+  width: 27px;
+  top: 58%;
+  left: 23%;
+  transform: rotateZ(50deg);
+}
+
+.success::after {
+  width: 50px;
+  top: 50%;
+  left: 35%;
+  transform: rotateZ(-50deg);
+}
+
+#success-msg{
+  display: none;
+}
+
 .hover\:text-red-600:hover{
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
@@ -2274,5 +2394,3 @@ body{
     line-height: 2.25rem;
   }
 }
-
-

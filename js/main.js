@@ -206,111 +206,124 @@ function showMagic() {
 
 // ===================== CONTACT FORM =====================
 
-$(document).ready(function () {
+// $(document).ready(function () {
 
-    // When the form is submitted
-    // $('#contact-form').submit(function(e) {
-    //     e.preventDefault(); // prevent the form from submitting normally
-    //     console.log($(e.target));
-    //     var isValid = $(e.target).validate();
-
-
-    //     console.log("isValid: ", isValid);
-    //     // Send a POST request to the server
-    //     $.post('https://formsubmit.co/el/vixohe', $(this).serialize(), function(response) {
-    //         // Show the success pop-up
-    //         $('#success-popup').show();
-
-    //         // Hide the pop-up when the user clicks the "Close" button
-    //         $('#close-popup').click(function() {
-    //             $('#success-popup').hide();
-    //         });
-
-    //     });
-
-    // });
-
-    // form.addEventListener('submit', () => {
-    //     e.preventDefault();
-    //     $('#success-popup').show();
-    //     setTimeout(() => form.submit(), 2000);
-    // }
-    // );
-
-    $('#contact-form').submit(function (e) {
-        e.preventDefault(); // prevent the form from submitting normally
-        console.log($(e.target));
-        var isValid = $(e.target).validate();
+//     // When the form is submitted
+//     // $('#contact-form').submit(function(e) {
+//     //     e.preventDefault(); // prevent the form from submitting normally
+//     //     console.log($(e.target));
+//     //     var isValid = $(e.target).validate();
 
 
-        console.log("isValid: ", isValid);
-        // Send a POST request to the server
-        $.post('https://formsubmit.co/el/vixohe', $(this).serialize(), function (response) {
-            // Show the success pop-up
-            $('#success-popup').show();
+//     //     console.log("isValid: ", isValid);
+//     //     // Send a POST request to the server
+//     //     $.post('https://formsubmit.co/el/vixohe', $(this).serialize(), function(response) {
+//     //         // Show the success pop-up
+//     //         $('#success-popup').show();
 
-            // Hide the pop-up when the user clicks the "Close" button
-            $('#close-popup').click(function () {
-                $('#success-popup').hide();
-            });
+//     //         // Hide the pop-up when the user clicks the "Close" button
+//     //         $('#close-popup').click(function() {
+//     //             $('#success-popup').hide();
+//     //         });
 
-        });
+//     //     });
 
+//     // });
+
+//     // form.addEventListener('submit', () => {
+//     //     e.preventDefault();
+//     //     $('#success-popup').show();
+//     //     setTimeout(() => form.submit(), 2000);
+//     // }
+//     // );
+
+//     $('#contact-form').submit(function (e) {
+//         e.preventDefault(); // prevent the form from submitting normally
+//         console.log($(e.target));
+//         // var isValid = $(e.target).validate();
+
+//         // console.log();
+//         e.target.validationMessage();
+
+
+//         console.log("isValid: ", isValid);
+//         // Send a POST request to the server
+//         $.post('https://formsubmit.co/el/vixohe', $(this).serialize(), function (response) {
+//             // Show the success pop-up
+//             $('#success-popup').show();
+
+//             // Hide the pop-up when the user clicks the "Close" button
+//             $('#close-popup').click(function () {
+//                 $('#success-popup').hide();
+//             });
+
+//         });
+
+//     });
+
+// });
+
+$(function () {
+    // Initialize form validation on the registration form.
+    // It has the name attribute "registration"
+    $("form#contact-form").submit(function(e) {
+        e.preventDefault();
+    }).validate({
+        // Specify validation rules
+        rules: {
+            // The key name on the left side is the name attribute
+            // of an input field. Validation rules are defined
+            // on the right side
+            name: "required",
+            email: {
+                required: true,
+                // Specify that email should be validated
+                // by the built-in "email" rule
+                email: true
+            },
+            message: "required"
+        },
+        // Specify validation error messages
+        messages: {
+            name: "Please enter your name",
+            message: "Please insert your inquiry",
+            email: "Please enter a valid email address"
+        },
+        // Make sure the form is submitted to the destination defined
+        // in the "action" attribute of the form when valid
+        submitHandler: function (form) {
+            // form.preventDefault();
+            // form.submit();
+            var form  = $(form);
+            var name = form.find("[name=name]").val();
+            var email = form.find("[name=email]").val();
+            var message = form.find("[name=message]").val();
+            var subject = form.find("[name=_subject]").val();
+            var template = form.find("[name=_template]").val();
+            $.ajax
+                ({
+                    method: "POST",
+                    url: "https://formsubmit.co/ajax/chuahsr99.work@gmail.com",
+                    dataType: 'json',
+                    // accepts: 'application/json',
+                    data: {
+                        name: name,
+                        email: email,
+                        message: message,
+                        "_template": template,
+                        "_subject": subject,
+                    },
+                    success: function (data) {
+                        // $('#success-popup').show();
+                        $('#success-msg').show();
+                    }
+                });
+            return false;
+        }
     });
-
 });
 
 // ===================== SCROLLREVEAL JS =====================
-
-
-var slideDown = {
-    distance: '60px',
-    origin: 'top',
-    opacity: 0,
-}
-
-var slideLeft = {
-    distance: '60px',
-    origin: 'left',
-    opacity: 0,
-    interval: 1000,
-}
-
-
-var slideRight = {
-    distance: '60px',
-    origin: 'right',
-    opacity: 0,
-    interval: 1000,
-}
-
-var slideUp = {
-    distance: '60px',
-    origin: 'bottom',
-    opacity: 0,
-    interval: 1000,
-}
-
-// var slideDownWithDelay100 = {
-//     distance: '60px',
-//     origin: 'top',
-//     opacity: 0,
-//     delay: 100,
-// }
-
-// var slideDownWithDelay200 = {
-//     distance: '60px',
-//     origin: 'top',
-//     opacity: 0,
-//     delay: 200,
-// }
-
-// var slideDownWithDelay300 = {
-//     distance: '60px',
-//     origin: 'top',
-//     opacity: 0,
-//     delay: 300,
-// }
 
 ScrollReveal({
     distance: '60px',
@@ -320,37 +333,14 @@ ScrollReveal({
 });
 
 if (window.innerWidth >= 768) {
-    ScrollReveal().reveal('#header .a_sr', { interval: 400 });
+    ScrollReveal().reveal('#header .a_sr', { interval: 200 });
 }
 
-// ScrollReveal().reveal('#landing .home__title', slideDownWithDelay100);
-// ScrollReveal().reveal('#landing .home__subtitle', slideDownWithDelay200);
-// ScrollReveal().reveal('#landing .home__description', slideDownWithDelay300);
-ScrollReveal().reveal('#landing .home__social-icon', { interval: 400 });
-ScrollReveal().reveal('#landing .home__data *', { interval: 600 });
+ScrollReveal().reveal('#landing .home__social-icon', { interval: 200 });
+ScrollReveal().reveal('#landing .home__data *', { interval: 300 });
 
-
-ScrollReveal().reveal('#about-me .a_sr', { interval: 400 });
-// ScrollReveal().reveal('#about-me .title', { interval: 500 });
-// ScrollReveal().reveal('#about-me .subtitle', {delay: 500, interval: 500 });
-// ScrollReveal().reveal('#about-me .about-me__content', {delay: 500, interval: 500 });
-// ScrollReveal().reveal('#about-me .subtitle', {delay: 500, interval: 500 });
-
-ScrollReveal().reveal('#skills .a_sr', { interval: 400 });
-// ScrollReveal().reveal('#skills .title', { interval: 500 });
-// ScrollReveal().reveal('#skills .subtitle', { interval: 1000 });
-
-
-ScrollReveal().reveal('#projects .a_sr', { interval: 400 });
-
-ScrollReveal().reveal('#qualifications .a_sr', { interval: 400 });
-ScrollReveal().reveal('#contact-me .a_sr', { interval: 400 });
-// ScrollReveal().reveal('#projects .featured__project .project-content', slideUp);
-
-// ScrollReveal().reveal('#projects .featured__project .project-content .project-overline', { interval: 500 });
-// ScrollReveal().reveal('#projects .featured__project .project-content .project-title', { interval: 800 });
-// ScrollReveal().reveal('#projects .featured__project .project-content .project-description', { interval: 1100 });
-// ScrollReveal().reveal('#projects .featured__project .project-content .project-tech-list', { interval: 1400 });
-// ScrollReveal().reveal('#projects .featured__project .project-content .project-links', { interval: 1700 });
-// ScrollReveal().reveal('#projects .featured__project:nth-of-type(2n+1) .project-image', slideDown);
-// ScrollReveal().reveal('#projects .featured__project .project-image', slideRight);
+ScrollReveal().reveal('#about-me .a_sr', { interval: 200 });
+ScrollReveal().reveal('#skills .a_sr', { interval: 200 });
+ScrollReveal().reveal('#projects .a_sr', { interval: 200 });
+ScrollReveal().reveal('#qualifications .a_sr', { interval: 200 });
+ScrollReveal().reveal('#contact-me .a_sr', { interval: 200 });

@@ -325,22 +325,30 @@ $(function () {
 
 // ===================== SCROLLREVEAL JS =====================
 
-ScrollReveal({
-    distance: '60px',
-    origin: 'top',
-    duration: 2400,
-    // interval: 400,
+
+$(window).on('load', function() {
+    window.scrollTo(0, 0);
+    ScrollReveal({
+        distance: '60px',
+        origin: 'top',
+        duration: 2400,
+        // interval: 400,
+    });
+    
+    
+    if (window.innerWidth >= 768) {
+        ScrollReveal().reveal('#header .a_sr', { interval: 200 });
+    }
+
+    ScrollReveal().reveal('#header .a_sr', { interval: 200 });
+    ScrollReveal().reveal('#landing .home__social-icon', { interval: 200 });
+    ScrollReveal().reveal('#landing .home__data *', { interval: 300 });
+    
+    ScrollReveal().reveal('#about-me .a_sr', { interval: 200 });
+    ScrollReveal().reveal('#skills .a_sr', { interval: 200 });
+    ScrollReveal().reveal('#projects .a_sr', { interval: 200 });
+    ScrollReveal().reveal('#qualifications .a_sr', { interval: 200 });
+    ScrollReveal().reveal('#contact-me .a_sr', { interval: 200 });
 });
 
-if (window.innerWidth >= 768) {
-    ScrollReveal().reveal('#header .a_sr', { interval: 200 });
-}
 
-ScrollReveal().reveal('#landing .home__social-icon', { interval: 200 });
-ScrollReveal().reveal('#landing .home__data *', { interval: 300 });
-
-ScrollReveal().reveal('#about-me .a_sr', { interval: 200 });
-ScrollReveal().reveal('#skills .a_sr', { interval: 200 });
-ScrollReveal().reveal('#projects .a_sr', { interval: 200 });
-ScrollReveal().reveal('#qualifications .a_sr', { interval: 200 });
-ScrollReveal().reveal('#contact-me .a_sr', { interval: 200 });

@@ -1805,9 +1805,10 @@ body{
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
-/* .featured__project .project-description {
-    
-} */
+.featured__project .project-description{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 
 .featured__project .project-tech-list{
   display: flex;

@@ -281,9 +281,9 @@
     @apply text-blue-500;
 }
 
-/* .featured__project .project-description {
-    
-} */
+.featured__project .project-description {
+    @apply text-white;
+}
 
 
 .featured__project .project-tech-list {

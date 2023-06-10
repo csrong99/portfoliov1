@@ -341,7 +341,7 @@ if (window.innerWidth >= 768) {
 
 ScrollReveal().reveal('#header .a_sr', { interval: 200 });
 ScrollReveal().reveal('#landing .home__social-icon', { interval: 200 });
-ScrollReveal().reveal('#landing .home__data *', { interval: 300 });
+ScrollReveal().reveal('#landing .home__data *, #landing .home__scroll', { interval: 400 });
 
 ScrollReveal().reveal('#about-me .a_sr', { interval: 200 });
 ScrollReveal().reveal('#skills .a_sr', { interval: 200 });
